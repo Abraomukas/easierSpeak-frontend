@@ -1,7 +1,9 @@
 import React from "react";
 import { Link } from "react-router-dom";
 
-const backgroundColor = { "backgroundColor": "rgb(0, 82, 122)" };
+const backgroundColor = { backgroundColor: "rgb(0, 82, 122)" };
+const logoPath = "./images/tm-logo.png";
+const logoStyle = { marginTop: "2px" };
 
 function Navbar(props) {
 	return (
@@ -11,6 +13,15 @@ function Navbar(props) {
 					<div className='container'>
 						{/* Logo */}
 						<div className='d-flex flex-wrap align-items-center justify-content-center justify-content-lg-start'>
+							<Link>
+								<img
+									src={logoPath}
+									height='100'
+									alt='easierSpeak'
+									loading='lazy'
+									style={logoStyle}
+								/>
+							</Link>
 							<ul className='nav col-12 col-lg-auto my-2 justify-content-center my-md-0 text-small'>
 								<li>
 									<Link to='#' className='nav-link text-secondary'>
