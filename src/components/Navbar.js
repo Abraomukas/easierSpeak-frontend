@@ -12,8 +12,8 @@ function Navbar(props) {
 				<div className='px-3 py-2 text-white' style={backgroundColor}>
 					<div className='container'>
 						{/* Logo */}
-						<div className='d-flex flex-wrap align-items-center justify-content-center justify-content-lg-start'>
-							<Link>
+						<div className='d-flex justify-content-start'>
+							<Link to='/'>
 								<img
 									src={logoPath}
 									height='100'
@@ -22,6 +22,8 @@ function Navbar(props) {
 									style={logoStyle}
 								/>
 							</Link>
+						</div>
+						<div className='d-flex justify-content-end'>
 							<ul className='nav col-12 col-lg-auto my-2 justify-content-center my-md-0 text-small'>
 								<li>
 									<Link to='#' className='nav-link text-secondary'>
