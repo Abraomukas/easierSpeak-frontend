@@ -9,10 +9,10 @@ function Navbar(props) {
 	return (
 		<div>
 			<header>
-				<div className='px-3 py-2 text-white' style={backgroundColor}>
-					<div className='container'>
+				<div className='px-3 text-white' style={backgroundColor}>
+					<div className='container-fluid'>
 						{/* Logo */}
-						<div className='d-flex justify-content-start'>
+						<div className='d-flex navbar-brand justify-content-start'>
 							<Link to='/'>
 								<img
 									src={logoPath}
@@ -21,6 +21,9 @@ function Navbar(props) {
 									loading='lazy'
 									style={logoStyle}
 								/>
+							</Link>{" "}
+							<Link className='navbar-brand' to='/'>
+								easierSpeak
 							</Link>
 						</div>
 						<div className='d-flex justify-content-end'>
