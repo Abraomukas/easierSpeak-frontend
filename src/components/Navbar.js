@@ -12,10 +12,10 @@ function Navbar(props) {
 	return (
 		<div>
 			<header>
-				<div className='navbar navbar-expand-lg' style={backgroundColor}>
+				<div className='navbar' style={backgroundColor}>
 					<div className='container-fluid'>
-						{/* Logo */}
-						<div className='d-flex justify-content-start align-items-center'>
+						{/* Brand */}
+						<div className='px-3 d-flex align-items-center'>
 							<Link className='navbar-brand' to='/'>
 								<img
 									src={logoPath}
@@ -29,52 +29,69 @@ function Navbar(props) {
 								easierSpeak
 							</Link>
 						</div>
-						<div className='d-flex justify-content-end'>
-							<ul className='nav col-12 col-lg-auto my-2 justify-content-center my-md-0 text-small'>
-								<li>
-									<div className='mx-1 d-flex flex-column align-items-center'>
-										<Link to='#' className='nav-link'>
-											<img
-												src={meetingsPath}
-												height='40'
-												alt='easierSpeak'
-												loading='lazy'
-												style={iconStyle}
-											/>
-										</Link>
-										<p className='text-white'>Meetings</p>
-									</div>
-								</li>
-								<li>
-									<div className='mx-1 d-flex flex-column align-items-center'>
-										<Link to='#' className='nav-link'>
-											<img
-												src={clubsPath}
-												height='40'
-												alt='easierSpeak'
-												loading='lazy'
-												style={iconStyle}
-											/>
-										</Link>
-										<p className='text-white'>Clubs</p>
-									</div>
-								</li>
-								<li>
-									<div className='mx-1 d-flex flex-column align-items-center'>
-										<Link to='#' className='nav-link'>
-											<img
-												src={faqsPath}
-												height='40'
-												alt='easierSpeak'
-												loading='lazy'
-												style={iconStyle}
-											/>
-										</Link>
-										<p className='text-white'>FAQs</p>
-									</div>
-								</li>
-							</ul>
+						{/* Sections */}
+						<ul className='nav'>
+							<li>
+								<div className='d-flex flex-column align-items-center'>
+									<Link to='#' className='nav-link'>
+										<img
+											src={meetingsPath}
+											height='40'
+											alt='Meetings'
+											loading='lazy'
+											style={iconStyle}
+										/>
+									</Link>
+									<p className='text-white'>Meetings</p>
+								</div>
+							</li>
+							<li>
+								<div className='d-flex flex-column align-items-center'>
+									<Link to='#' className='nav-link'>
+										<img
+											src={clubsPath}
+											height='40'
+											alt='Clubs'
+											loading='lazy'
+											style={iconStyle}
+										/>
+									</Link>
+									<p className='text-white'>Clubs</p>
+								</div>
+							</li>
+							<li>
+								<div className='d-flex flex-column align-items-center'>
+									<Link to='#' className='nav-link'>
+										<img
+											src={faqsPath}
+											height='40'
+											alt='FAQs'
+											loading='lazy'
+											style={iconStyle}
+										/>
+									</Link>
+									<p className='text-white'>FAQs</p>
+								</div>
+							</li>
+						</ul>
+						{/* Language */}
+						<div className='d-flex'>
+							<select className='form-select form-select-sm'>
+								<option defaultChecked>ENG</option>
+								<option>HU</option>
+								<option>ESP</option>
+							</select>
+							<img
+								src='https://www.countryflags.io/gb/flat/24.png'
+								height='31'
+								alt='FAQs'
+								style={iconStyle}
+							/>
 						</div>
+						{/* Profile */}
+						<Link className='btn btn-primary' to='/login' role='button'>
+							Login
+						</Link>
 					</div>
 				</div>
 			</header>
