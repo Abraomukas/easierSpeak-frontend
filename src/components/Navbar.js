@@ -3,7 +3,10 @@ import { Link } from "react-router-dom";
 
 const backgroundColor = { backgroundColor: "rgb(0, 82, 122)" };
 const logoPath = "./images/tm-logo.png";
-const logoStyle = { marginTop: "2px" };
+const meetingsPath = "./images/meetings.png";
+const clubsPath = "./images/clubs.png";
+const faqsPath = "./images/faqs.png";
+const iconStyle = { marginTop: "2px" };
 
 function Navbar(props) {
 	return (
@@ -19,7 +22,7 @@ function Navbar(props) {
 									height='75'
 									alt='easierSpeak'
 									loading='lazy'
-									style={logoStyle}
+									style={iconStyle}
 								/>
 							</Link>
 							<Link className='navbar-brand text-white' to='/'>
@@ -32,11 +35,11 @@ function Navbar(props) {
 									<div className='mx-1 d-flex flex-column align-items-center'>
 										<Link to='#' className='nav-link'>
 											<img
-												src={logoPath}
-												height='30'
+												src={meetingsPath}
+												height='40'
 												alt='easierSpeak'
 												loading='lazy'
-												style={logoStyle}
+												style={iconStyle}
 											/>
 										</Link>
 										<p className='text-white'>Meetings</p>
@@ -46,11 +49,11 @@ function Navbar(props) {
 									<div className='mx-1 d-flex flex-column align-items-center'>
 										<Link to='#' className='nav-link'>
 											<img
-												src={logoPath}
-												height='30'
+												src={clubsPath}
+												height='40'
 												alt='easierSpeak'
 												loading='lazy'
-												style={logoStyle}
+												style={iconStyle}
 											/>
 										</Link>
 										<p className='text-white'>Clubs</p>
@@ -60,11 +63,11 @@ function Navbar(props) {
 									<div className='mx-1 d-flex flex-column align-items-center'>
 										<Link to='#' className='nav-link'>
 											<img
-												src={logoPath}
-												height='30'
+												src={faqsPath}
+												height='40'
 												alt='easierSpeak'
 												loading='lazy'
-												style={logoStyle}
+												style={iconStyle}
 											/>
 										</Link>
 										<p className='text-white'>FAQs</p>
