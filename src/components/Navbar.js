@@ -2,10 +2,12 @@ import React from "react";
 import { Link } from "react-router-dom";
 
 const backgroundColor = { backgroundColor: "rgb(0, 82, 122)" };
+
 const logoPath = "./images/tm-logo.png";
 const meetingsPath = "./images/meetings.png";
 const clubsPath = "./images/clubs.png";
 const faqsPath = "./images/faqs.png";
+
 const iconStyle = { marginTop: "2px" };
 
 function Navbar(props) {
@@ -15,7 +17,7 @@ function Navbar(props) {
 				<div className='navbar' style={backgroundColor}>
 					<div className='container-fluid'>
 						{/* Brand */}
-						<div className='px-3 d-flex align-items-center'>
+						<div className='d-flex align-items-center'>
 							<Link className='navbar-brand' to='/'>
 								<img
 									src={logoPath}
@@ -74,20 +76,6 @@ function Navbar(props) {
 								</div>
 							</li>
 						</ul>
-						{/* Language */}
-						<div className='d-flex'>
-							<select className='form-select form-select-sm'>
-								<option defaultChecked>ENG</option>
-								<option>HU</option>
-								<option>ESP</option>
-							</select>
-							<img
-								src='https://www.countryflags.io/gb/flat/24.png'
-								height='31'
-								alt='FAQs'
-								style={iconStyle}
-							/>
-						</div>
 						{/* Profile */}
 						<Link className='btn btn-primary' to='/login' role='button'>
 							Login
