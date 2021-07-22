@@ -1,5 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
+
+/* Components */
 import DropdownList from "./DropdownList";
 
 const backgroundColor = { backgroundColor: "rgb(0, 82, 122)" };
@@ -38,14 +40,28 @@ function Navbar(props) {
 								easierSpeak
 							</Link>
 						</div>
-						{/* Sections - Meetiings */}
-						<DropdownList label='Meetings' dropdown={meetingsDropdown} />
-						{/* Sections - This Club */}
-						<DropdownList label='This Club' dropdown={thisClubDropdown} />
-						{/* Sections - Go to */}
-						<DropdownList label='Go to' dropdown={goToDropdown} />
-						{/* Sections - FAQs */}
-						<DropdownList label='Help' dropdown={helpDropdown} />
+
+						{/* Sections */}
+						<div className='collapse navbar-collapse'>
+							<ul className='navbar-nav'>
+								{props.headerSites.map((linkObj, index) => {
+									return (
+										<li key={index} className='nav-item dropdown'>
+											<Link
+												className='nav-link dropdown-toggle'
+												to=''
+												id='navbarDropdown'
+												role='button'
+												data-bs-toggle='dropdown'
+												aria-expanded='false'>
+												{linkObj.label}
+											</Link>
+											<DropdownList dropdown={dropdowns[index]} />
+										</li>
+									);
+								})}
+							</ul>
+						</div>
 
 						{/* Profile */}
 						<Link className='btn btn-primary' to='/login' role='button'>
