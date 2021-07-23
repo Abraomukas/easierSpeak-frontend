@@ -1,0 +1,39 @@
+{
+	"title": "easierSpeak for",
+	"pages": {
+		"meetings": "Meetings",
+		"this_club": "This Club",
+		"go_to": "Go To",
+		"help": "Help"
+	},
+	"page_meetings": {
+		"create_meeting": "Create a meeting",
+		"last_meeting": "Last meeting",
+		"next_meeting": "Next meeting",
+		"calendar": "Calendar",
+		"all_online_meetings": "All online meetings"
+	},
+	"page_this_club": {
+		"home": "Home",
+		"directory": "Directory",
+		"officers_exco": "Officers / ExCo",
+		"members": "Members",
+		"speeches_archive": "Speeches archive",
+		"meetings_archive": "Meetings archive"
+	},
+	"page_go_to": {
+		"ti_info": "TI information",
+		"district_stats": "District stats",
+		"map": "Map",
+		"club_search": "Club search",
+		"member_search": "Member search"
+	},
+	"page_help": {
+		"faqs": "FAQs",
+		"discussion_forum": "Discussion forum",
+		"knowledge_map": "Knowledge map",
+		"site_stats": "Site stats",
+		"training": "easierSpeak training"
+	},
+	"login": "Login"
+}

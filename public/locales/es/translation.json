@@ -1,0 +1,39 @@
+{
+	"title": "easierSpeak para",
+	"pages": {
+		"meetings": "Reuniones",
+		"this_club": "Este Club",
+		"go_to": "Ir a",
+		"help": "Ayuda"
+	},
+	"page_meetings": {
+		"create_meeting": "Crear una reunión",
+		"last_meeting": "Última reunión",
+		"next_meeting": "Próxima reunión",
+		"calendar": "Calendario",
+		"all_online_meetings": "Todas las reuniones online"
+	},
+	"page_this_club": {
+		"home": "Inicio",
+		"directory": "Directorio",
+		"officers_exco": "Oficiales / ExCo",
+		"members": "Miembros",
+		"speeches_archive": "Archivo de discursos",
+		"meetings_archive": "Archivo de reuniones"
+	},
+	"page_go_to": {
+		"ti_info": "Información sobre TI",
+		"district_stats": "Estadísticas de distrito",
+		"map": "Mapa",
+		"club_search": "Búsqueda de clubs",
+		"member_search": "Búsqueda de miembros"
+	},
+	"page_help": {
+		"faqs": "Preguntas frecuentes",
+		"discussion_forum": "Foro",
+		"knowledge_map": "Knowledge map",
+		"site_stats": "Estadísticas de la web",
+		"training": "Material educativo sobre easierSpeak"
+	},
+	"login": "Acceder"
+}
