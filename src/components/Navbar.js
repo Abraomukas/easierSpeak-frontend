@@ -1,7 +1,9 @@
 import React from "react";
 import { Link } from "react-router-dom";
 
-/* Components */
+/*
+ * Components
+ */
 import DropdownList from "./DropdownList";
 
 const backgroundColor = { backgroundColor: "rgb(0, 82, 122)" };
@@ -36,8 +38,8 @@ function Navbar(props) {
 									loading='lazy'
 								/>
 							</Link>
-							<Link className='navbar-brand text-white' to='/'>
-								easierSpeak
+							<Link className='navbar-brand text-white fw-bold' to='/'>
+								easierSpeak for {props.clubName}
 							</Link>
 						</div>
 
@@ -48,7 +50,7 @@ function Navbar(props) {
 									return (
 										<li key={index} className='nav-item dropdown'>
 											<Link
-												className='nav-link dropdown-toggle'
+												className='nav-link dropdown-toggle text-white text-decoration-none'
 												to=''
 												id='navbarDropdown'
 												role='button'

@@ -39,6 +39,7 @@ const helpDropdown = [
 	{ label: "Discussion forum", path: "#" },
 	{ label: "Knowledge map", path: "#" },
 	{ label: "Site stats", path: "#" },
+	{ label: "easierSpeak training", path: "#" },
 	// ? { label: "Site groups", path: "#" },
 ];
 
@@ -46,13 +47,13 @@ const headerSites = [
 	{ label: "Meetings", dropdown: { meetingsDropdown } },
 	{ label: "This Club", dropdown: { thisClubDropdown } },
 	{ label: "Go to", dropdown: { goToDropdown } },
-	{ label: "FAQs", dropdown: { helpDropdown } },
+	{ label: "Help", dropdown: { helpDropdown } },
 ];
 
 function LayoutRoute(props) {
 	return (
 		<div>
-			<Navbar headerSites={headerSites} />
+			<Navbar clubName="Skylarks Toastmasters Club" headerSites={headerSites} />
 			<Route
 				path={props.path}
 				exact={props.exact}
