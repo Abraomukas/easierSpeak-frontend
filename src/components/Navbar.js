@@ -1,6 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import { useTranslation } from "react-i18next";
+import { Trans, useTranslation } from "react-i18next";
 
 /*
  * Components
@@ -41,9 +41,9 @@ function Navbar(props) {
 								/>
 							</Link>
 							<Translation>
-								{(t, { i18n }) => (
+								{(t) => (
 									<Link className='navbar-brand text-white fw-bold' to='/'>
-										{t("title")}
+										{t("title")} {props.clubName}
 									</Link>
 								)}
 							</Translation>
@@ -72,9 +72,13 @@ function Navbar(props) {
 						</div>
 
 						{/* Profile */}
-						<Link className='btn btn-primary' to='/login' role='button'>
-							Login
-						</Link>
+						<Translation>
+							{(t) => (
+								<Link className='btn btn-primary' role='button'>
+									{t("login")}
+								</Link>
+							)}
+						</Translation>
 					</div>
 				</div>
 			</header>

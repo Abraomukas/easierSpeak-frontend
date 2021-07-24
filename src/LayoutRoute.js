@@ -44,10 +44,10 @@ const helpDropdown = [
 ];
 
 const headerSites = [
-	{ label: "Meetings", dropdown: { meetingsDropdown } },
-	{ label: "This Club", dropdown: { thisClubDropdown } },
-	{ label: "Go to", dropdown: { goToDropdown } },
-	{ label: "Help", dropdown: { helpDropdown } },
+	{ label: "pages.meetings", dropdown: { meetingsDropdown } },
+	{ label: "pages.this_club", dropdown: { thisClubDropdown } },
+	{ label: "pages.go_to", dropdown: { goToDropdown } },
+	{ label: "pages.help", dropdown: { helpDropdown } },
 ];
 
 function LayoutRoute(props) {
