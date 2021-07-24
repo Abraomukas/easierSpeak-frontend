@@ -9,7 +9,8 @@ import cookies from "js-cookie";
  */
 import DropdownList from "./DropdownList";
 
-const backgroundColor = { backgroundColor: "rgb(0, 82, 122)" };
+const navbarBgColor = { backgroundColor: "#235679" };
+const buttonBgColor = { backgroundColor: "#8d323f" };
 const logoPath = "./images/tm-logo.png";
 const languages = [
 	{ name: "English", country_code: "gb" },
@@ -18,8 +19,6 @@ const languages = [
 
 function Navbar(props) {
 	const currentLngCode = cookies.get("i18next") || "en";
-	const currentLng = languages.find((l) => l.country_code === currentLngCode);
-
 	const meetingsDropdown = props.headerSites[0].dropdown.meetingsDropdown;
 	const thisClubDropdown = props.headerSites[1].dropdown.thisClubDropdown;
 	const goToDropdown = props.headerSites[2].dropdown.goToDropdown;
@@ -35,7 +34,7 @@ function Navbar(props) {
 	return (
 		<div>
 			<header>
-				<div className='navbar navbar-expand-lg' style={backgroundColor}>
+				<div className='navbar navbar-expand-lg' style={navbarBgColor}>
 					<div className='container-fluid'>
 						{/* Brand */}
 						<div className='d-flex align-items-center'>
@@ -86,6 +85,7 @@ function Navbar(props) {
 						<div className='dropdown mx-3'>
 							<button
 								className='btn btn-secondary dropdown-toggle'
+								style={buttonBgColor}
 								type='button'
 								id='dropdownMenuButton1'
 								data-bs-toggle='dropdown'
@@ -118,7 +118,10 @@ function Navbar(props) {
 						{/* Profile */}
 						<Translation>
 							{(t) => (
-								<Link className='btn btn-primary' role='button'>
+								<Link
+									className='btn text-white'
+									style={buttonBgColor}
+									role='button'>
 									{t("login")}
 								</Link>
 							)}
