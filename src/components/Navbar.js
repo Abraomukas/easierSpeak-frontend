@@ -1,6 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import { Translation } from "react-i18next";
+import i18next from "i18next";
 
 /*
  * Components
@@ -85,7 +86,7 @@ function Navbar(props) {
 								id='dropdownMenuButton1'
 								data-bs-toggle='dropdown'
 								aria-expanded='false'>
-								Dropdown button
+								<i class='bi bi-globe'></i>
 							</button>
 							<ul
 								className='dropdown-menu'
@@ -93,7 +94,9 @@ function Navbar(props) {
 								{languages.map(({ name, country_code, index }) => {
 									return (
 										<li key={index}>
-											<button className='dropdown-item'>
+											<button
+												className='dropdown-item'
+												onClick={() => i18next.changeLanguage(country_code)}>
 												<span
 													className={`flag-icon flag-icon-${country_code} mx-3`}></span>
 												{name}

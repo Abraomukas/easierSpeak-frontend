@@ -35,8 +35,8 @@ i18n
 		},
 		detection: {
 			order: [
-				"htmlTag",
 				"cookie",
+				"htmlTag",
 				"localStorage",
 				"sessionStorage",
 				"navigator",
@@ -44,6 +44,7 @@ i18n
 				"path",
 				"subdomain",
 			],
+			caches: ["cookie"],
 		},
 	});
 
