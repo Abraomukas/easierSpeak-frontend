@@ -3,6 +3,7 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "flag-icon-css": "^3.5.0",
     "i18next": "^20.3.3",
     "i18next-browser-languagedetector": "^6.1.2",
     "i18next-http-backend": "^1.2.7",

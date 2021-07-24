@@ -9,6 +9,10 @@ import DropdownList from "./DropdownList";
 
 const backgroundColor = { backgroundColor: "rgb(0, 82, 122)" };
 const logoPath = "./images/tm-logo.png";
+const languages = [
+	{ name: "English", country_code: "gb" },
+	{ name: "Español", country_code: "es" },
+];
 
 function Navbar(props) {
 	const meetingsDropdown = props.headerSites[0].dropdown.meetingsDropdown;
@@ -67,6 +71,33 @@ function Navbar(props) {
 												)}
 											</Translation>
 											<DropdownList dropdown={dropdowns[index]} />
+										</li>
+									);
+								})}
+							</ul>
+						</div>
+
+						{/* Language selector */}
+						<div className='dropdown mx-3'>
+							<button
+								className='btn btn-secondary dropdown-toggle'
+								type='button'
+								id='dropdownMenuButton1'
+								data-bs-toggle='dropdown'
+								aria-expanded='false'>
+								Dropdown button
+							</button>
+							<ul
+								className='dropdown-menu'
+								aria-labelledby='dropdownMenuButton1'>
+								{languages.map(({ name, country_code, index }) => {
+									return (
+										<li key={index}>
+											<button className='dropdown-item'>
+												<span
+													className={`flag-icon flag-icon-${country_code} mx-3`}></span>
+												{name}
+											</button>
 										</li>
 									);
 								})}
