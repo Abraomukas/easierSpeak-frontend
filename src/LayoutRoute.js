@@ -1,5 +1,6 @@
 import React from "react";
 import { Route } from "react-router-dom";
+import Footer from "./components/Footer";
 
 /*
  * Components
@@ -58,6 +59,7 @@ function LayoutRoute(props) {
 				exact={props.exact}
 				component={props.component}
 			/>
+			<Footer />
 		</div>
 	);
 }
