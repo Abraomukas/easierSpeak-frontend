@@ -2,6 +2,7 @@ import React from "react";
 import { Link } from "react-router-dom";
 import { Translation } from "react-i18next";
 import i18next from "i18next";
+import cookies from "js-cookie";
 
 /*
  * Components
@@ -16,6 +17,9 @@ const languages = [
 ];
 
 function Navbar(props) {
+	const currentLngCode = cookies.get("i18next") || "en";
+	const currentLng = languages.find((l) => l.country_code === currentLngCode);
+
 	const meetingsDropdown = props.headerSites[0].dropdown.meetingsDropdown;
 	const thisClubDropdown = props.headerSites[1].dropdown.thisClubDropdown;
 	const goToDropdown = props.headerSites[2].dropdown.goToDropdown;
@@ -96,9 +100,13 @@ function Navbar(props) {
 										<li key={index}>
 											<button
 												className='dropdown-item'
-												onClick={() => i18next.changeLanguage(country_code)}>
+												onClick={() => i18next.changeLanguage(country_code)}
+												disabled={country_code === currentLngCode}>
 												<span
-													className={`flag-icon flag-icon-${country_code} mx-3`}></span>
+													className={`flag-icon flag-icon-${country_code} mx-3`}
+													style={{
+														opacity: country_code === currentLngCode ? 0.5 : 1,
+													}}></span>
 												{name}
 											</button>
 										</li>
