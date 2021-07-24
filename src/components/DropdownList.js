@@ -1,5 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import { Translation } from "react-i18next";
 
 function DropdownList(props) {
 	return (
@@ -7,9 +8,13 @@ function DropdownList(props) {
 			{props.dropdown.map((linkObj, index) => {
 				return (
 					<li key={index}>
-						<Link className='dropdown-item' to={linkObj.path}>
-							{linkObj.label}
-						</Link>
+						<Translation>
+							{(t) => (
+								<Link className='dropdown-item' to={linkObj.path}>
+									{t(linkObj.label)}
+								</Link>
+							)}
+						</Translation>
 					</li>
 				);
 			})}

@@ -1,15 +1,13 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import { Trans, useTranslation } from "react-i18next";
+import { Translation } from "react-i18next";
 
 /*
  * Components
  */
 import DropdownList from "./DropdownList";
-import { Translation } from "react-i18next";
 
 const backgroundColor = { backgroundColor: "rgb(0, 82, 122)" };
-
 const logoPath = "./images/tm-logo.png";
 
 function Navbar(props) {
@@ -55,15 +53,19 @@ function Navbar(props) {
 								{props.headerSites.map((linkObj, index) => {
 									return (
 										<li key={index} className='nav-item dropdown'>
-											<Link
-												className='nav-link dropdown-toggle text-white text-decoration-none'
-												to=''
-												id='navbarDropdown'
-												role='button'
-												data-bs-toggle='dropdown'
-												aria-expanded='false'>
-												{linkObj.label}
-											</Link>
+											<Translation>
+												{(t) => (
+													<Link
+														className='nav-link dropdown-toggle text-white text-decoration-none'
+														to='#'
+														id='navbarDropdown'
+														role='button'
+														data-bs-toggle='dropdown'
+														aria-expanded='false'>
+														{t(linkObj.label)}
+													</Link>
+												)}
+											</Translation>
 											<DropdownList dropdown={dropdowns[index]} />
 										</li>
 									);
