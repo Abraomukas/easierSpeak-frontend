@@ -20,6 +20,7 @@ i18n
 	// init i18next
 	// for all options read: https://www.i18next.com/overview/configuration-options
 	.init({
+		// lng: document.querySelector("html").lang,
 		fallbackLng: "en",
 		debug: true,
 
@@ -28,6 +29,21 @@ i18n
 		},
 		react: {
 			useSuspense: true,
+		},
+		backend: {
+			loadPath: "/locales/{{lng}}/translation.json",
+		},
+		detection: {
+			order: [
+				"htmlTag",
+				"cookie",
+				"localStorage",
+				"sessionStorage",
+				"navigator",
+				"querystring",
+				"path",
+				"subdomain",
+			],
 		},
 	});
 

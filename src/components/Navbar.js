@@ -1,5 +1,4 @@
 import React from "react";
-import { Suspense } from "react";
 import { Link } from "react-router-dom";
 import { useTranslation } from "react-i18next";
 
@@ -7,14 +6,13 @@ import { useTranslation } from "react-i18next";
  * Components
  */
 import DropdownList from "./DropdownList";
+import { Translation } from "react-i18next";
 
 const backgroundColor = { backgroundColor: "rgb(0, 82, 122)" };
 
 const logoPath = "./images/tm-logo.png";
 
 function Navbar(props) {
-	const { t, i18n } = useTranslation();
-
 	const meetingsDropdown = props.headerSites[0].dropdown.meetingsDropdown;
 	const thisClubDropdown = props.headerSites[1].dropdown.thisClubDropdown;
 	const goToDropdown = props.headerSites[2].dropdown.goToDropdown;
@@ -42,9 +40,13 @@ function Navbar(props) {
 									loading='lazy'
 								/>
 							</Link>
-							<Link className='navbar-brand text-white fw-bold' to='/'>
-								{t("easierSpeak for")} {props.clubName}
-							</Link>
+							<Translation>
+								{(t, { i18n }) => (
+									<Link className='navbar-brand text-white fw-bold' to='/'>
+										{t("title")}
+									</Link>
+								)}
+							</Translation>
 						</div>
 
 						{/* Sections */}
