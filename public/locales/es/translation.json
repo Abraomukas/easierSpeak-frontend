@@ -35,5 +35,12 @@
 		"site_stats": "Estadísticas de la web",
 		"training": "Material educativo sobre easierSpeak"
 	},
-	"login": "Acceder"
+	"login": "Acceder",
+	"footer": {
+		"note": "un experimento creado por",
+		"disclaimer_one": "The names Toastmasters International and all other Toastmasters International trademarks and copyrights are the sole property of ",
+		"disclaimer_two": "This website is developed, supported and financed by Toastmaster members for use in their own clubs and is only available to Toastmaster clubs. It is not financed or supported by Toastmasters International in any way.",
+		"terms_and_conditions": "Términos y condiciones - Revisados el {{current_date}}",
+		"privacy_policy": "Política de privacidad - Revisada el {{current_date}}"
+	}
 }
