@@ -119,6 +119,7 @@ function Navbar(props) {
 						<Translation>
 							{(t) => (
 								<Link
+									to='/login'
 									className='btn text-white'
 									style={buttonBgColor}
 									role='button'>
