@@ -40,6 +40,8 @@ const helpDropdown = [
 	{ label: "page_help.knowledge_map", path: "#" },
 	{ label: "page_help.site_stats", path: "#" },
 	{ label: "page_help.training", path: "#" },
+	{ label: "page_help.terms_and_conditions", path: "/terms-and-conditions" },
+	{ label: "page_help.privacy_policy", path: "/privacy-policy" },
 	// ? { label: "Site groups", path: "#" },
 ];
 

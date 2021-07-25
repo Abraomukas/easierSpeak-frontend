@@ -33,14 +33,14 @@
 		"discussion_forum": "Discussion forum",
 		"knowledge_map": "Knowledge map",
 		"site_stats": "Site stats",
-		"training": "easierSpeak training"
+		"training": "easierSpeak training",
+		"terms_and_conditions": "Terms and conditions",
+		"privacy_policy": "Privacy policy"
 	},
 	"login": "Login",
 	"footer": {
 		"note": "a side project by",
 		"disclaimer_one": "The names Toastmasters International and all other Toastmasters International trademarks and copyrights are the sole property of ",
-		"disclaimer_two": "This website is developed, supported and financed by Toastmaster members for use in their own clubs and is only available to Toastmaster clubs. It is not financed or supported by Toastmasters International in any way.",
-		"terms_and_conditions": "Terms and conditions - Revised on {{current_date}}",
-		"privacy_policy": "Privacy policy - Revised on {{current_date}}"
+		"disclaimer_two": "This website is developed, supported and financed by Toastmaster members for use in their own clubs and is only available to Toastmaster clubs. It is not financed or supported by Toastmasters International in any way."
 	}
 }

@@ -33,14 +33,14 @@
 		"discussion_forum": "Foro",
 		"knowledge_map": "Glosario",
 		"site_stats": "Estadísticas de la web",
-		"training": "Material educativo sobre easierSpeak"
+		"training": "Material educativo sobre easierSpeak",
+		"terms_and_conditions": "Términos y condiciones",
+		"privacy_policy": "Política de privacidad"
 	},
 	"login": "Acceder",
 	"footer": {
 		"note": "un experimento creado por",
 		"disclaimer_one": "El nombre Toastmasters International y todas sus marcas asociadas, así como los derechos de autor, son propiedad única y exclusivamente de ",
-		"disclaimer_two": "Esta web está siendo creada y mantenida por miembros de la asociación para su uso dentro de los clubes a los que están afiliados y sólo está disponoble para clubes Toastmasters. No está financiada por Toastmasters International.",
-		"terms_and_conditions": "Términos y condiciones - Revisados el {{current_date}}",
-		"privacy_policy": "Política de privacidad - Revisada el {{current_date}}"
+		"disclaimer_two": "Esta web está siendo creada y mantenida por miembros de la asociación para su uso dentro de los clubes a los que están afiliados y sólo está disponoble para clubes Toastmasters. No está financiada por Toastmasters International."
 	}
 }
