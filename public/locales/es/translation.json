@@ -38,8 +38,8 @@
 	"login": "Acceder",
 	"footer": {
 		"note": "un experimento creado por",
-		"disclaimer_one": "The names Toastmasters International and all other Toastmasters International trademarks and copyrights are the sole property of ",
-		"disclaimer_two": "This website is developed, supported and financed by Toastmaster members for use in their own clubs and is only available to Toastmaster clubs. It is not financed or supported by Toastmasters International in any way.",
+		"disclaimer_one": "El nombre Toastmasters International y todas sus marcas asociadas, así como los derechos de autor, son propiedad única y exclusivamente de ",
+		"disclaimer_two": "Esta web está siendo creada y mantenida por miembros de la asociación para su uso dentro de los clubes a los que están afiliados y sólo está disponoble para clubes Toastmasters. No está financiada por Toastmasters International.",
 		"terms_and_conditions": "Términos y condiciones - Revisados el {{current_date}}",
 		"privacy_policy": "Política de privacidad - Revisada el {{current_date}}"
 	}
