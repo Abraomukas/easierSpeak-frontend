@@ -42,7 +42,7 @@
 		"email": "Email address",
 		"password": "Password",
 		"remember_me": "Remember me",
-		"sign_in": "Sign in",
+		"sign_in": "SIGN IN",
 		"forgotten_password": "Forgotten password?",
 		"register": "No account yet? Click here to register"
 	},
@@ -50,9 +50,9 @@
 		"title": "Forgot password",
 		"message": "Enter your email address and we will send you a link to reset your password",
 		"email": "Email address",
-		"request_password": "Request password"
+		"request_password": "REQUEST PASSWORD"
 	},
-	"login": "Login",
+	"login": "LOGIN",
 	"footer": {
 		"note": "a side project by",
 		"disclaimer_one": "The names Toastmasters International and all other Toastmasters International trademarks and copyrights are the sole property of ",

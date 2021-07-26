@@ -42,7 +42,7 @@
 		"email": "Email",
 		"password": "Contraseña",
 		"remember_me": "Recuérdame",
-		"sign_in": "Iniciar sesión",
+		"sign_in": "INICIAR SESIÓN",
 		"forgotten_password": "¿Has olvidado la contraseña?",
 		"register": "¿No tienes cuenta todavía? Haz click aquí para registrarte"
 	},
@@ -50,9 +50,9 @@
 		"title": "Recuperar contraseña",
 		"message": "Introduce tu email y se te enviará un enlace para que puedas resetear tu contraseña",
 		"email": "Email",
-		"request_password": "Recuperar contraseña"
+		"request_password": "RECUPERAR CONTRASEÑA"
 	},
-	"login": "Iniciar sesión",
+	"login": "INICIAR SESIÓN",
 	"footer": {
 		"note": "un experimento creado por",
 		"disclaimer_one": "El nombre Toastmasters International y todas sus marcas asociadas, así como los derechos de autor, son propiedad única y exclusivamente de ",
