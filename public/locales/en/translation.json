@@ -39,6 +39,10 @@
 	},
 	"page_login": {
 		"title": "Please sign in",
+		"email": "Email address",
+		"password": "Password",
+		"remember_me": "Remember me",
+		"sign_in": "Sign in",
 		"forgotten_password": "Forgotten password?",
 		"register": "No account yet? Click here to register"
 	},

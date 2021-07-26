@@ -39,10 +39,14 @@
 	},
 	"page_login": {
 		"title": "Por favor, inicia sesión",
+		"email": "Email",
+		"password": "Contraseña",
+		"remember_me": "Recuérdame",
+		"sign_in": "Iniciar sesión",
 		"forgotten_password": "¿Has olvidado la contraseña?",
 		"register": "¿No tienes cuenta todavía? Haz click aquí para registrarte"
 	},
-	"login": "Acceder",
+	"login": "Iniciar sesión",
 	"footer": {
 		"note": "un experimento creado por",
 		"disclaimer_one": "El nombre Toastmasters International y todas sus marcas asociadas, así como los derechos de autor, son propiedad única y exclusivamente de ",

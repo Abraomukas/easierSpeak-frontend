@@ -90,7 +90,7 @@ function Navbar(props) {
 								id='dropdownMenuButton1'
 								data-bs-toggle='dropdown'
 								aria-expanded='false'>
-								<i class='bi bi-globe'></i>
+								<i className='bi bi-globe'></i>
 							</button>
 							<ul
 								className='dropdown-menu'
