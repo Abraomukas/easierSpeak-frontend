@@ -10,21 +10,23 @@ import LayoutRoute from "./LayoutRoute";
 /*
  * Pages
  */
-import LandingPage from "./pages/LandingPage";
-import LoginPage from "./pages/LoginPage";
+import Main from "./pages/Main";
+import Login from "./pages/Login";
 import ForgottenPassword from "./pages/ForgottenPassword";
+import Register from "./pages/Register";
 
 function App() {
 	return (
 		<BrowserRouter>
 			<Switch>
-				<LayoutRoute path='/' exact={true} component={LandingPage} />
-				<LayoutRoute path='/login' exact={true} component={LoginPage} />
+				<LayoutRoute path='/' exact={true} component={Main} />
+				<LayoutRoute path='/login' exact={true} component={Login} />
 				<LayoutRoute
 					path='/forgotten-password'
 					exact={true}
 					component={ForgottenPassword}
 				/>
+				<LayoutRoute path='/register' exact={true} component={Register} />
 			</Switch>
 		</BrowserRouter>
 	);

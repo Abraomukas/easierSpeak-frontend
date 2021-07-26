@@ -2,7 +2,7 @@ import React from "react";
 import { Link } from "react-router-dom";
 import { Translation } from "react-i18next";
 
-function LoginPage() {
+function Login() {
 	return (
 		<div>
 			<div className='position-absolute top-50 start-50 translate-middle'>
@@ -77,7 +77,7 @@ function LoginPage() {
 				<div className='my-3'>
 					<Translation>
 						{(t) => (
-							<Link className='text-decoration-none' to='/forgotten-password'>
+							<Link className='text-decoration-none' to='/register'>
 								{t("page_login.register")}
 							</Link>
 						)}
@@ -88,4 +88,4 @@ function LoginPage() {
 	);
 }
 
-export default LoginPage;
+export default Login;
