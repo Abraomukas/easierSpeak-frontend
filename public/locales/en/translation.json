@@ -37,6 +37,11 @@
 		"terms_and_conditions": "Terms and conditions",
 		"privacy_policy": "Privacy policy"
 	},
+	"page_login": {
+		"title": "Please sign in",
+		"forgotten_password": "Forgotten password?",
+		"register": "No account yet? Click here to register"
+	},
 	"login": "Login",
 	"footer": {
 		"note": "a side project by",

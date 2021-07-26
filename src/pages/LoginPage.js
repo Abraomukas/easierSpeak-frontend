@@ -1,5 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import { Translation } from "react-i18next";
 
 function LoginPage() {
 	return (
@@ -41,15 +42,23 @@ function LoginPage() {
 				</button>
 				{/* Forgot password link */}
 				<div className='my-3'>
-					<Link className='text-decoration-none' to='/forgotten-password'>
-						Forgotten password?
-					</Link>
+					<Translation>
+						{(t) => (
+							<Link className='text-decoration-none' to='/forgotten-password'>
+								{t("page_login.forgotten_password")}
+							</Link>
+						)}
+					</Translation>
 				</div>
 				{/* Register link */}
 				<div className='my-3'>
-					<Link className='text-decoration-none' to='/register'>
-						No account yet? Click here to register
-					</Link>
+					<Translation>
+						{(t) => (
+							<Link className='text-decoration-none' to='/forgotten-password'>
+								{t("page_login.register")}
+							</Link>
+						)}
+					</Translation>
 				</div>
 			</div>
 		</div>

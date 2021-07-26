@@ -37,6 +37,11 @@
 		"terms_and_conditions": "Términos y condiciones",
 		"privacy_policy": "Política de privacidad"
 	},
+	"page_login": {
+		"title": "Por favor, inicia sesión",
+		"forgotten_password": "¿Has olvidado la contraseña?",
+		"register": "¿No tienes cuenta todavía? Haz click aquí para registrarte"
+	},
 	"login": "Acceder",
 	"footer": {
 		"note": "un experimento creado por",
