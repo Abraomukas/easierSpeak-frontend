@@ -12,6 +12,7 @@ import LayoutRoute from "./LayoutRoute";
  */
 import LandingPage from "./pages/LandingPage";
 import LoginPage from "./pages/LoginPage";
+import ForgottenPassword from "./pages/ForgottenPassword";
 
 function App() {
 	return (
@@ -19,6 +20,11 @@ function App() {
 			<Switch>
 				<LayoutRoute path='/' exact={true} component={LandingPage} />
 				<LayoutRoute path='/login' exact={true} component={LoginPage} />
+				<LayoutRoute
+					path='/forgotten-password'
+					exact={true}
+					component={ForgottenPassword}
+				/>
 			</Switch>
 		</BrowserRouter>
 	);

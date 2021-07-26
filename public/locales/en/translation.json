@@ -46,6 +46,12 @@
 		"forgotten_password": "Forgotten password?",
 		"register": "No account yet? Click here to register"
 	},
+	"page_forgotten_password": {
+		"title": "Forgot password",
+		"message": "Enter your email address and we will send you a link to reset your password",
+		"email": "Email address",
+		"request_password": "Request password"
+	},
 	"login": "Login",
 	"footer": {
 		"note": "a side project by",

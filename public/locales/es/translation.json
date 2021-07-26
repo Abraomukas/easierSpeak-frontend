@@ -46,6 +46,12 @@
 		"forgotten_password": "¿Has olvidado la contraseña?",
 		"register": "¿No tienes cuenta todavía? Haz click aquí para registrarte"
 	},
+	"page_forgotten_password": {
+		"title": "Recuperar contraseña",
+		"message": "Introduce tu email y se te enviará un enlace para que puedas resetear tu contraseña",
+		"email": "Email",
+		"request_password": "Recuperar contraseña"
+	},
 	"login": "Iniciar sesión",
 	"footer": {
 		"note": "un experimento creado por",
