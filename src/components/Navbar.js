@@ -18,7 +18,7 @@ const languages = [
 ];
 
 function Navbar(props) {
-	const currentLngCode = cookies.get("i18next") || "en";
+	const currentLngCode = cookies.get("i18next") || "gb";
 	const meetingsDropdown = props.headerSites[0].dropdown.meetingsDropdown;
 	const thisClubDropdown = props.headerSites[1].dropdown.thisClubDropdown;
 	const goToDropdown = props.headerSites[2].dropdown.goToDropdown;

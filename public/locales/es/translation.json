@@ -52,6 +52,14 @@
 		"email": "Email",
 		"request_password": "RECUPERAR CONTRASEÑA"
 	},
+	"page_register": {
+		"registration_info": "Datos de registro",
+		"username": "Nombre de usuario",
+		"email": "Email",
+		"password": "Contraseña",
+		"confirm_password": "Confirmar contraseña",
+		"profile_info": "Datos de perfil"
+	},
 	"login": "INICIAR SESIÓN",
 	"footer": {
 		"note": "un experimento creado por",

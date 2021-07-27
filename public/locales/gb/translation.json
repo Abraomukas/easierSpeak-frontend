@@ -52,6 +52,14 @@
 		"email": "Email address",
 		"request_password": "REQUEST PASSWORD"
 	},
+	"page_register": {
+		"registration_info": "Registration information",
+		"username": "Username",
+		"email": "Email address",
+		"password": "Password",
+		"confirm_password": "Confirm password",
+		"profile_info": "Profile information"
+	},
 	"login": "LOGIN",
 	"footer": {
 		"note": "a side project by",
