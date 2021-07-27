@@ -59,6 +59,7 @@
 		"password": "Password",
 		"confirm_password": "Confirm password",
 		"profile_info": "Profile information"
+		
 	},
 	"login": "LOGIN",
 	"footer": {
