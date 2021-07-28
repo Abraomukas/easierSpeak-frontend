@@ -58,8 +58,23 @@
 		"email": "Email address",
 		"password": "Password",
 		"confirm_password": "Confirm password",
-		"profile_info": "Profile information"
-		
+		"profile_info": "Profile information",
+		"first_name": "First name",
+		"last_name": "Last name",
+		"name_visibility": {
+			"title": "Your name will be visible to:",
+			"public": "Everbody",
+			"members": "Club members only",
+			"officers": "Club officers only"
+		},
+		"location": "Location",
+		"phone": "Phone",
+		"phone_visibility": {
+			"title": "Your phone number will be visible to:",
+			"public": "Everbody",
+			"members": "Club members only",
+			"officers": "Club officers only"
+		}
 	},
 	"login": "LOGIN",
 	"footer": {

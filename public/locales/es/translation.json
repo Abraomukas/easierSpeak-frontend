@@ -58,7 +58,23 @@
 		"email": "Email",
 		"password": "Contraseña",
 		"confirm_password": "Confirmar contraseña",
-		"profile_info": "Datos de perfil"
+		"profile_info": "Datos de perfil",
+		"first_name": "Nombre",
+		"last_name": "Apellidos",
+		"name_visibility": {
+			"title": "Tu nombre será visible para:",
+			"public": "Todo el mundo",
+			"members": "Sólo miembros de tu club",
+			"officers": "Sólo los oficiales de tu club"
+		},
+		"location": "Ubicación",
+		"phone": "Teléfono",
+		"phone_visibility": {
+			"title": "Tu teléfono será vicible para:",
+			"public": "Todo el mundo",
+			"members": "Sólo miembros de tu club",
+			"officers": "Sólo los oficiales de tu club"
+		}
 	},
 	"login": "INICIAR SESIÓN",
 	"footer": {
