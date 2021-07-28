@@ -53,7 +53,7 @@
 		"request_password": "REQUEST PASSWORD"
 	},
 	"page_register": {
-		"title":"Please fill in all data in each section",
+		"title": "Please fill in all data in each section",
 		"registration_info": "Registration information",
 		"username": "Username",
 		"email": "Email address",
@@ -77,7 +77,11 @@
 			"officers": "Club officers only"
 		},
 		"general_settings": "General settings",
-		"language": "Default language"
+		"language": "Default language",
+		"languages": {
+			"gb": "English",
+			"es": "Spanish"
+		}
 	},
 	"login": "LOGIN",
 	"footer": {

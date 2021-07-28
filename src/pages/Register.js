@@ -1,8 +1,10 @@
 import React from "react";
-import { Link } from "react-router-dom";
+import { useState } from "react";
 import { Translation } from "react-i18next";
 
 function Register() {
+	const [defaultLng, setDefaultLng] = useState("English");
+
 	return (
 		<div className='position-absolute top-50 start-50 translate-middle'>
 			{/* Title */}
@@ -342,7 +344,7 @@ function Register() {
 								<Translation>
 									{(t) => (
 										<label htmlFor='floatingInput'>
-											{t("page_register.language")}
+											{t("page_register.language")} - {defaultLng}
 										</label>
 									)}
 								</Translation>
@@ -358,14 +360,34 @@ function Register() {
 											className='dropdown-menu'
 											aria-labelledby='dropdownMenuButton1'>
 											<li>
-												<Link className='dropdown-item' to='#'>
-													English
-												</Link>
+												<Translation>
+													{(t) => (
+														<button
+															className='dropdown-item'
+															onClick={() => {
+																var lng = t("page_register.languages.gb");
+																setDefaultLng(lng);
+															}}
+															type='button'>
+															{t("page_register.languages.gb")}
+														</button>
+													)}
+												</Translation>
 											</li>
 											<li>
-												<Link className='dropdown-item' to='#'>
-													Español
-												</Link>
+												<Translation>
+													{(t) => (
+														<button
+															className='dropdown-item'
+															onClick={() => {
+																var lng = t("page_register.languages.es");
+																setDefaultLng(lng);
+															}}
+															type='button'>
+															{t("page_register.languages.es")}
+														</button>
+													)}
+												</Translation>
 											</li>
 										</ul>
 									</div>
