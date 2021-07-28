@@ -53,6 +53,7 @@
 		"request_password": "REQUEST PASSWORD"
 	},
 	"page_register": {
+		"title":"Please fill in all data in each section",
 		"registration_info": "Registration information",
 		"username": "Username",
 		"email": "Email address",
@@ -71,10 +72,12 @@
 		"phone": "Phone",
 		"phone_visibility": {
 			"title": "Your phone number will be visible to:",
-			"public": "Everbody",
+			"public": "Everybody",
 			"members": "Club members only",
 			"officers": "Club officers only"
-		}
+		},
+		"general_settings": "General settings",
+		"language": "Default language"
 	},
 	"login": "LOGIN",
 	"footer": {

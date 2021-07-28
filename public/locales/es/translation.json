@@ -53,6 +53,7 @@
 		"request_password": "RECUPERAR CONTRASEÑA"
 	},
 	"page_register": {
+		"title":"Por favor, rellena todos los campos en cada sección",
 		"registration_info": "Datos de registro",
 		"username": "Nombre de usuario",
 		"email": "Email",
@@ -74,7 +75,9 @@
 			"public": "Todo el mundo",
 			"members": "Sólo miembros de tu club",
 			"officers": "Sólo los oficiales de tu club"
-		}
+		},
+		"general_settings": "Opciones generales",
+		"language": "Idioma por defecto"
 	},
 	"login": "INICIAR SESIÓN",
 	"footer": {
