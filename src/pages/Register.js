@@ -51,13 +51,6 @@ function Register() {
 						<div className='accordion-body'>
 							{/* Default language */}
 							<div className='mt-3'>
-								<Translation>
-									{(t) => (
-										<label htmlFor='floatingInput'>
-											{t("page_register.language")} - {defaultLng}
-										</label>
-									)}
-								</Translation>
 								<div className='mt-3'>
 									<div className='dropdown'>
 										<button
@@ -65,7 +58,11 @@ function Register() {
 											type='button'
 											id='dropdownMenuButton1'
 											data-bs-toggle='dropdown'
-											aria-expanded='false'></button>
+											aria-expanded='false'>
+											<Translation>
+												{(t) => t("page_register.language")}
+											</Translation>
+										</button>
 										<ul
 											className='dropdown-menu'
 											aria-labelledby='dropdownMenuButton1'>
