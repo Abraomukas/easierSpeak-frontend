@@ -21,17 +21,14 @@ const languages = [
 function Navbar(props) {
 	const isLoggedIn = useSelector((state) => state.isLogged);
 	const currentLngCode = cookies.get("i18next") || "gb";
-	const meetingsDropdown = props.headerSites[0].dropdown.meetingsDropdown;
-	const thisClubDropdown = props.headerSites[1].dropdown.thisClubDropdown;
-	const goToDropdown = props.headerSites[2].dropdown.goToDropdown;
-	const helpDropdown = props.headerSites[3].dropdown.helpDropdown;
 
-	const dropdowns = [
-		meetingsDropdown,
-		thisClubDropdown,
-		goToDropdown,
-		helpDropdown,
-	];
+	const goToDropdown = props.headerSites[0].dropdown.goToDropdown;
+	const helpDropdown = props.headerSites[1].dropdown.helpDropdown;
+	const dropdowns = [goToDropdown, helpDropdown];
+
+	const thisClubDropdown = props.afterLoginSites[0].dropdown.thisClubDropdown;
+	const meetingsDropdown = props.afterLoginSites[1].dropdown.meetingsDropdown;
+	const afterLoginDropdowns = [thisClubDropdown, meetingsDropdown];
 
 	return (
 		<div>
@@ -40,7 +37,7 @@ function Navbar(props) {
 					<div className='container-fluid'>
 						{/* Brand */}
 						<div className='d-flex align-items-center'>
-							<Link className='navbar-brand' to='/'>
+							<Link className='navbar-brand' to='#'>
 								<img
 									src={logoPath}
 									height='55'
@@ -60,6 +57,27 @@ function Navbar(props) {
 						{/* Sections */}
 						<div className='collapse navbar-collapse'>
 							<ul className='navbar-nav'>
+								{isLoggedIn &&
+									props.afterLoginSites.map((linkObj, index) => {
+										return (
+											<li key={index} className='nav-item dropdown'>
+												<Translation>
+													{(t) => (
+														<Link
+															className='nav-link dropdown-toggle text-white text-decoration-none'
+															to={linkObj.path}
+															id='navbarDropdown'
+															role='button'
+															data-bs-toggle='dropdown'
+															aria-expanded='false'>
+															{t(linkObj.label)}
+														</Link>
+													)}
+												</Translation>
+												<DropdownList dropdown={afterLoginDropdowns[index]} />
+											</li>
+										);
+									})}
 								{props.headerSites.map((linkObj, index) => {
 									return (
 										<li key={index} className='nav-item dropdown'>
@@ -67,7 +85,7 @@ function Navbar(props) {
 												{(t) => (
 													<Link
 														className='nav-link dropdown-toggle text-white text-decoration-none'
-														to='#'
+														to={linkObj.path}
 														id='navbarDropdown'
 														role='button'
 														data-bs-toggle='dropdown'

@@ -7,22 +7,25 @@ import Footer from "./components/Footer";
  */
 import Navbar from "./components/Navbar";
 
-const meetingsDropdown = [
-	{ label: "page_meetings.create_meeting", path: "#" },
-	{ label: "page_meetings.last_meeting", path: "#" },
-	{ label: "page_meetings.next_meeting", path: "#" },
-	{ label: "page_meetings.calendar", path: "#" },
-	{ label: "page_meetings.all_online_meetings", path: "#" },
+const thisClubDropdown = [
+	{ label: "page_this_club.home", path: "/my-club" },
+	{ label: "page_this_club.directory", path: "/my-club/directory" },
+	{ label: "page_this_club.officers_exco", path: "my-club/exco" },
+	{ label: "page_this_club.members", path: "/my-club/members" },
+	// ? { label: "Charts", path: "#" },
+	{
+		label: "page_this_club.speeches_archive",
+		path: "/my-club/speeches/archive",
+	},
 ];
 
-const thisClubDropdown = [
-	{ label: "page_this_club.home", path: "#" },
-	{ label: "page_this_club.directory", path: "#" },
-	{ label: "page_this_club.officers_exco", path: "#" },
-	{ label: "page_this_club.members", path: "#" },
-	// ? { label: "Charts", path: "#" },
-	{ label: "page_this_club.speeches_archive", path: "#" },
-	{ label: "page_this_club.meetings_archive", path: "#" },
+const meetingsDropdown = [
+	{ label: "page_meetings.create_meeting", path: "/my-club/create-meeting" },
+	{ label: "page_meetings.last_meeting", path: "/my-club/last-meeting" },
+	{ label: "page_meetings.next_meeting", path: "/my-club/next-meeting" },
+	{ label: "page_meetings.calendar", path: "/my-club/meetings/calendar" },
+	{ label: "page_meetings.archive", path: "my-club/meetings/archive" },
+	{ label: "page_meetings.all_online_meetings", path: "/online-meetings" },
 ];
 
 const goToDropdown = [
@@ -46,16 +49,23 @@ const helpDropdown = [
 ];
 
 const headerSites = [
-	{ label: "pages.meetings", dropdown: { meetingsDropdown } },
-	{ label: "pages.this_club", dropdown: { thisClubDropdown } },
 	{ label: "pages.go_to", dropdown: { goToDropdown } },
 	{ label: "pages.help", dropdown: { helpDropdown } },
+];
+
+const afterLoginSites = [
+	{ label: "pages.this_club", dropdown: { thisClubDropdown } },
+	{ label: "pages.meetings", dropdown: { meetingsDropdown } },
 ];
 
 function LayoutRoute(props) {
 	return (
 		<div>
-			<Navbar clubName='Skylarks Toastmasters Club' headerSites={headerSites} />
+			<Navbar
+				clubName='Skylarks Toastmasters Club'
+				headerSites={headerSites}
+				afterLoginSites={afterLoginSites}
+			/>
 			<Route
 				path={props.path}
 				exact={props.exact}

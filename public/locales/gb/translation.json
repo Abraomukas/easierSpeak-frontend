@@ -11,6 +11,7 @@
 		"last_meeting": "Last meeting",
 		"next_meeting": "Next meeting",
 		"calendar": "Calendar",
+		"archive": "Archive",
 		"all_online_meetings": "All online meetings"
 	},
 	"page_this_club": {
@@ -18,8 +19,7 @@
 		"directory": "Directory",
 		"officers_exco": "Officers / ExCo",
 		"members": "Members",
-		"speeches_archive": "Speeches archive",
-		"meetings_archive": "Meetings archive"
+		"speeches_archive": "Speeches archive"
 	},
 	"page_go_to": {
 		"ti_info": "TI information",

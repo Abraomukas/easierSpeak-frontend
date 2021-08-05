@@ -11,6 +11,7 @@
 		"last_meeting": "Última reunión",
 		"next_meeting": "Próxima reunión",
 		"calendar": "Calendario",
+		"archive": "Archivo",
 		"all_online_meetings": "Todas las reuniones online"
 	},
 	"page_this_club": {
@@ -18,8 +19,7 @@
 		"directory": "Directorio",
 		"officers_exco": "Oficiales / ExCo",
 		"members": "Miembros",
-		"speeches_archive": "Archivo de discursos",
-		"meetings_archive": "Archivo de reuniones"
+		"speeches_archive": "Archivo de discursos"
 	},
 	"page_go_to": {
 		"ti_info": "Información sobre TI",
