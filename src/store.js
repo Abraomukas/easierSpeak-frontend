@@ -8,7 +8,7 @@ import loginReducer from "./reducers/login";
 import languageReducer from "./reducers/language";
 
 const allReducers = combineReducers({
-	login: loginReducer,
+	isLogged: loginReducer,
 	language: languageReducer,
 });
 

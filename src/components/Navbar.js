@@ -1,6 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import { Translation } from "react-i18next";
+import { useSelector } from "react-redux";
 import i18next from "i18next";
 import cookies from "js-cookie";
 
@@ -18,6 +19,7 @@ const languages = [
 ];
 
 function Navbar(props) {
+	const isLoggedIn = useSelector((state) => state.isLogged);
 	const currentLngCode = cookies.get("i18next") || "gb";
 	const meetingsDropdown = props.headerSites[0].dropdown.meetingsDropdown;
 	const thisClubDropdown = props.headerSites[1].dropdown.thisClubDropdown;
@@ -49,7 +51,7 @@ function Navbar(props) {
 							<Translation>
 								{(t) => (
 									<Link className='navbar-brand text-white fw-bold' to='/'>
-										{t("title")} {props.clubName}
+										{t("title")} {isLoggedIn ? " - " + props.clubName : ""}
 									</Link>
 								)}
 							</Translation>
