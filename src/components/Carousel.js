@@ -45,19 +45,23 @@ function Carousel() {
 					<div className='carousel-item'>
 						<img src={bgImgTwo} className='d-block w-100' alt='...' />
 						<div className='carousel-caption mb-14 d-none d-md-block'>
-							<h5>Second slide label</h5>
-							<p>
-								Some representative placeholder content for the second slide.
-							</p>
+							<Translation>
+								{(t) => <h5>{t("page_main.carousel.title_two")}</h5>}
+							</Translation>
+							<Translation>
+								{(t) => <p>{t("page_main.carousel.message_two")}</p>}
+							</Translation>
 						</div>
 					</div>
 					<div className='carousel-item'>
 						<img src={bgImgOne} className='d-block w-100' alt='...' />
 						<div className='carousel-caption d-none d-md-block'>
-							<h5>Third slide label</h5>
-							<p>
-								Some representative placeholder content for the third slide.
-							</p>
+							<Translation>
+								{(t) => <h5>{t("page_main.carousel.title_three")}</h5>}
+							</Translation>
+							<Translation>
+								{(t) => <p>{t("page_main.carousel.message_three")}</p>}
+							</Translation>
 						</div>
 					</div>
 				</div>
