@@ -84,7 +84,15 @@
 		}
 	},
 	"page_main": {
-		"button": "Únete"
+		"carousel": {
+			"title_one": "¿Te gustaría mejorar tus habilidades de liderazgo y expresión oral?",
+			"message_one": "Formula y expresa tus ideas de manera efectiva",
+			"title_two": "¿Te gustaría llevar tu carrera al siguiente nivel?",
+			"message_two": "Se más persuasivo y presenta tus ideas con confianza",
+			"title_three": "¿Te gustaría ganar confianza de cara a hablar en público?",
+			"message_three": "Mejora tu trato cara-a-cara con los demás"
+		},
+		"button": "ÚNETE"
 	},
 	"login": "INICIAR SESIÓN",
 	"footer": {

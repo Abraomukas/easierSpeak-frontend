@@ -1,4 +1,5 @@
 import React from "react";
+import { Translation } from "react-i18next";
 
 const bgImgOne = "./images/carousel-bg-one.png";
 const bgImgTwo = "./images/carousel-bg-two.png";
@@ -8,7 +9,7 @@ function Carousel() {
 		<div>
 			<div
 				id='carouselExampleCaptions'
-				className='carousel carousel-dark slide'
+				className='carousel carousel-fade slide'
 				data-bs-ride='carousel'>
 				<div className='carousel-indicators'>
 					<button
@@ -33,15 +34,17 @@ function Carousel() {
 					<div className='carousel-item active'>
 						<img src={bgImgOne} className='d-block w-100' alt='...' />
 						<div className='carousel-caption d-none d-md-block'>
-							<h5>First slide label</h5>
-							<p>
-								Some representative placeholder content for the first slide.
-							</p>
+							<Translation>
+								{(t) => <h5>{t("page_main.carousel.title_one")}</h5>}
+							</Translation>
+							<Translation>
+								{(t) => <p>{t("page_main.carousel.message_one")}</p>}
+							</Translation>
 						</div>
 					</div>
 					<div className='carousel-item'>
 						<img src={bgImgTwo} className='d-block w-100' alt='...' />
-						<div className='carousel-caption d-none d-md-block'>
+						<div className='carousel-caption mb-14 d-none d-md-block'>
 							<h5>Second slide label</h5>
 							<p>
 								Some representative placeholder content for the second slide.

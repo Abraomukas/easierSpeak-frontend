@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import { Translation } from "react-i18next";
 
 /*
@@ -25,12 +26,13 @@ function Main() {
 				{/* Sign in button */}
 				<Translation>
 					{(t) => (
-						<button
-							className='w-30 my-3 btn btn-lg text-white'
+						<Link
+							to='/register'
+							className='btn text-white w-30 my-3'
 							style={buttonBgColor}
-							type='submit'>
+							role='button'>
 							{t("page_main.button")}
-						</button>
+						</Link>
 					)}
 				</Translation>
 			</div>

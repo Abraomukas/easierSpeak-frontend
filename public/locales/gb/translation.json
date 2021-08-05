@@ -84,7 +84,15 @@
 		}
 	},
 	"page_main": {
-		"button": "Join us"
+		"carousel": {
+			"title_one": "Would you like to improve your speaking and leadership skills?",
+			"message_one": "Formulate and express your ideas effectively",
+			"title_two": "Would you like to ignite your career?",
+			"message_two": "Be more persuasive and confident when giving presentations",
+			"title_three": "Would you like to gain the confidence to speak up?",
+			"message_three": "Improve your one-on-one dealings with others"
+		},
+		"button": "JOIN US"
 	},
 	"login": "LOGIN",
 	"footer": {
