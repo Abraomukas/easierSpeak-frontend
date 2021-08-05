@@ -83,6 +83,9 @@
 			"es": "Spanish"
 		}
 	},
+	"page_main": {
+		"button": "Join us"
+	},
 	"login": "LOGIN",
 	"footer": {
 		"note": "a side project by",

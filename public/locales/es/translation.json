@@ -83,6 +83,9 @@
 			"es": "Español"
 		}
 	},
+	"page_main": {
+		"button": "Únete"
+	},
 	"login": "INICIAR SESIÓN",
 	"footer": {
 		"note": "un experimento creado por",

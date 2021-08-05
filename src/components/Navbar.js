@@ -37,7 +37,7 @@ function Navbar(props) {
 					<div className='container-fluid'>
 						{/* Brand */}
 						<div className='d-flex align-items-center'>
-							<Link className='navbar-brand' to='#'>
+							<Link className='navbar-brand' to='/'>
 								<img
 									src={logoPath}
 									height='55'
