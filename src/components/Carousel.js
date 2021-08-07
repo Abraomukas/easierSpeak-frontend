@@ -6,7 +6,7 @@ const bgImgTwo = "./images/carousel-bg-two.png";
 
 function Carousel() {
 	return (
-		<div>
+		<div style={{ width: "70%" }}>
 			<div
 				id='carouselExampleCaptions'
 				className='carousel carousel-fade slide'

@@ -11,10 +11,29 @@ const buttonBgColor = { backgroundColor: "#8d323f" };
 
 function Main() {
 	return (
-		<div className='position-absolute top-50 start-50 translate-middle'>
-			{/* Carousel */}
-			<Carousel />
+		<div
+			data-bs-spy='scroll'
+			data-bs-target='#navbar-example2'
+			data-bs-offset='0'
+			className='scrollspy-example'
+			tabindex='0'>
+			<div className='d-flex justify-content-center'>
+				{/* Carousel */}
+				<Carousel />
+			</div>
 			{/* easierSpeak in numbers */}
+			<div className='d-flex justify-content-center mt-3'>
+				<h2>OUR MEMBERS</h2>
+			</div>
+			<div className='d-flex justify-content-center mt-3'>
+				<h2>OUR CLUBS</h2>
+			</div>
+			<div className='d-flex justify-content-center mt-3'>
+				<h2>CORPORATE CLUBS</h2>
+			</div>
+			<div className='d-flex justify-content-center mt-3'>
+				<h2>OUR NUMBERS</h2>
+			</div>
 			{/* number of clubs  with pie chart representation */}
 			{/* number of events with graph representation */}
 			{/* number of members */}
