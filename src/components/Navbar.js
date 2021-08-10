@@ -33,7 +33,7 @@ function Navbar(props) {
 	return (
 		<div>
 			<header>
-				<div className='navbar navbar-expand-lg' style={navbarBgColor}>
+				<div className='navbar fixed-top navbar-expand-lg' style={navbarBgColor}>
 					<div className='container-fluid'>
 						{/* Brand */}
 						<div className='d-flex align-items-center'>

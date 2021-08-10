@@ -7,7 +7,7 @@ const navbarBgColor = { backgroundColor: "#235679" };
 function Footer() {
 	return (
 		<div>
-			<nav className='navbar fixed-bottom text-white' style={navbarBgColor}>
+			<nav className='navbar text-white' style={navbarBgColor}>
 				<div className='container-fluid d-flex justify-content-center'>
 					<p className='fs-6 fw-lighter'>
 						<Translation>

@@ -10,8 +10,8 @@ import store from "./store";
 const spinnerSizing = { width: "3rem", height: "3rem" };
 const spinnerFallback = (
 	<div className='d-flex justify-content-center mt-3'>
-		<div class='spinner-border' style={spinnerSizing} role='status'>
-			<span class='visually-hidden'>Loading...</span>
+		<div className='spinner-border' style={spinnerSizing} role='status'>
+			<span className='visually-hidden'>Loading...</span>
 		</div>
 	</div>
 );
