@@ -42,22 +42,18 @@ function Main() {
 					</div>
 					<div className='d-flex flex-row justify-content-center'>
 						<Square
-							color='#235679'
 							number='111'
 							title={t("page_main.headlines.our_numbers.square_members")}
 						/>
 						<Square
-							color='gray'
 							number='222'
 							title={t("page_main.headlines.our_numbers.square_clubs")}
 						/>
 						<Square
-							color='#235679'
 							number='333'
 							title={t("page_main.headlines.our_numbers.square_areas")}
 						/>
 						<Square
-							color='gray'
 							number='444'
 							title={t("page_main.headlines.our_numbers.square_countries")}
 						/>

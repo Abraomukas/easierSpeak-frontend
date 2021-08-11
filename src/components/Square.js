@@ -8,7 +8,7 @@ function Square(props) {
 				display: "flex",
 				width: 200,
 				height: 200,
-				backgroundColor: props.color,
+				backgroundColor: "#235679",
 				boxShadow: "1px 1px 10px 10px rgba(0, 0, 0, 0.2)",
 			}}>
 			<h1 className='text-white'>{props.number}</h1>

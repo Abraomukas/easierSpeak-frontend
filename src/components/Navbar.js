@@ -107,7 +107,7 @@ function Navbar(props) {
 						<div className='dropdown mx-3'>
 							<button
 								className='btn btn-secondary dropdown-toggle'
-								style={{ backgroundColor: "gray" }}
+								style={buttonBgColor}
 								type='button'
 								id='dropdownMenuButton1'
 								data-bs-toggle='dropdown'
