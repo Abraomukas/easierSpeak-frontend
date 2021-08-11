@@ -93,12 +93,21 @@
 			"message_three": "Improve your one-on-one dealings with others"
 		},
 		"headlines": {
+			"our_members": {
+				"title": "OUR MEMBERS"
+			},
+			"our_clubs": {
+				"title": "OUR CLUBS"
+			},
 			"our_numbers": {
 				"title": "OUR NUMBERS",
 				"square_members": "MEMBERS",
 				"square_clubs": "CLUBS",
 				"square_areas": "AREAS",
 				"square_countries": "COUNTRIES"
+			},
+			"our_corporate_clubs": {
+				"title": "OUR CORPORATE CLUBS"
 			}
 		},
 		"button": "JOIN US"

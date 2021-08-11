@@ -93,12 +93,21 @@
 			"message_three": "Mejora tu trato cara-a-cara con los demás"
 		},
 		"headlines": {
+			"our_members": {
+				"title": "NUESTROS MIEMBROS"
+			},
+			"our_clubs": {
+				"title": "NUESTROS CLUBES"
+			},
 			"our_numbers": {
 				"title": "NUESTROS NÚMEROS",
 				"square_members": "MIEMBROS",
 				"square_clubs": "CLUBS",
 				"square_areas": "ÁREAS",
 				"square_countries": "PAÍSES"
+			},
+			"our_corporate_clubs": {
+				"title": "NUESTROS CLUBES CORPORATIVOS"
 			}
 		},
 		"button": "ÚNETE"
