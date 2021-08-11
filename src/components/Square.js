@@ -1,4 +1,5 @@
 import React from "react";
+import CountUp from "react-countup";
 
 function Square(props) {
 	return (
@@ -11,7 +12,9 @@ function Square(props) {
 				backgroundColor: "#235679",
 				boxShadow: "1px 1px 10px 10px rgba(0, 0, 0, 0.2)",
 			}}>
-			<h1 className='text-white'>{props.number}</h1>
+			<h1 className='text-white'>
+				<CountUp start={1} end={props.number} duration={3} />
+			</h1>
 			<h3 className='text-white'>{props.title}</h3>
 		</div>
 	);
