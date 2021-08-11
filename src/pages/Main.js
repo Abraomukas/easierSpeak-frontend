@@ -27,34 +27,18 @@ function Main() {
 			</section>
 			{/* easierSpeak in numbers */}
 			<section>
-				<div className='container mt-3'>
-					<div className='row'>
-						<div className='col'>
-							<h2>OUR MEMBERS</h2>
-						</div>
-						<div className='col'></div>
+				<div className='container'>
+					<div className='d-flex flex-row mt-3'>
+						<h2>OUR MEMBERS</h2>
 					</div>
-					<div className='row'>
-						<div className='col'></div>
-						<div className='col-5'>
-							<h2>OUR CLUBS</h2>
-						</div>
-						<div className='col-5'></div>
-						<div className='col'></div>
+					<div className='d-flex flex-row-reverse mt-3'>
+						<h2>OUR CLUBS</h2>
 					</div>
-					<div className='row'>
-						<div className='col'></div>
-						<div className='col-5'></div>
-						<div className='col-5'>
-							<h2>OUR CORPORATE CLUBS</h2>
-						</div>
-						<div className='col'></div>
+					<div className='d-flex flex-row justify-content-center mt-3'>
+						<h2>OUR NUMBERS</h2>
 					</div>
-					<div className='row'>
-						<div className='col'></div>
-						<div className='col'>
-							<h2>OUR NUMBERS</h2>
-						</div>
+					<div className='d-flex flex-row justify-content-center mt-3'>
+						<h2>OUR CORPORATE CLUBS</h2>
 					</div>
 				</div>
 			</section>
