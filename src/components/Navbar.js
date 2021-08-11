@@ -33,7 +33,9 @@ function Navbar(props) {
 	return (
 		<div>
 			<header>
-				<div className='navbar fixed-top navbar-expand-lg' style={navbarBgColor}>
+				<div
+					className='navbar fixed-top navbar-expand-lg'
+					style={navbarBgColor}>
 					<div className='container-fluid'>
 						{/* Brand */}
 						<div className='d-flex align-items-center'>
@@ -105,7 +107,7 @@ function Navbar(props) {
 						<div className='dropdown mx-3'>
 							<button
 								className='btn btn-secondary dropdown-toggle'
-								style={buttonBgColor}
+								style={{ backgroundColor: "gray" }}
 								type='button'
 								id='dropdownMenuButton1'
 								data-bs-toggle='dropdown'
