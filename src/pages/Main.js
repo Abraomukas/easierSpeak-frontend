@@ -1,16 +1,15 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import { Translation, useTranslation } from "react-i18next";
-import Fade from "react-reveal/Fade";
 import { Progress } from "semantic-ui-react";
 
 /*
  * Components
  */
 import Carousel from "../components/Carousel";
-import Square from "../components/Square";
-import OurMembersSection from "../components/OurMembersSetion";
+import OurNumbersSection from "../components/OurNumbersSetion";
 import OurCorpoClubsSection from "../components/OurCorpoClubsSection";
+import OurClubsSection from "../components/OurClubsSection";
 
 const buttonBgColor = { backgroundColor: "#8d323f" };
 
@@ -35,18 +34,8 @@ function Main() {
 				<div className='d-flex flex-row my-3'>
 					<h2>OUR MEMBERS</h2>
 				</div>
-				<div className='d-flex flex-row-reverse justify-content-between my-3'>
-					<div>
-						<h2>OUR CLUBS</h2>
-					</div>
-					{/* # of clubs  with pie chart representation */}
-					<div className='mx-5' style={{ width: "70%" }}>
-						<Progress percent={60} size='large' active>
-							Active
-						</Progress>
-					</div>
-				</div>
-				<OurMembersSection />
+				<OurClubsSection />
+				<OurNumbersSection />
 				<OurCorpoClubsSection />
 			</div>
 

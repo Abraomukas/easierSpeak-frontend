@@ -1,19 +1,21 @@
 import React from "react";
 import Fade from "react-reveal/Fade";
-import { useTranslation } from "react-i18next";
+import { Translation, useTranslation } from "react-i18next";
 
 /*
  * Components
  */
-import Square from "../components/Square";
+import Square from "./Square";
 
-function OurMembersSection() {
+function OurNumbersSection() {
 	const { t } = useTranslation();
 
 	return (
 		<section>
 			<div className='d-flex flex-row justify-content-center my-3'>
-				<h2>OUR NUMBERS</h2>
+				<Translation>
+					{(t) => <h2>{t("page_main.headlines.our_numbers.title")}</h2>}
+				</Translation>
 			</div>
 			<div className='d-flex flex-row justify-content-center'>
 				{/* # of members */}
@@ -49,4 +51,4 @@ function OurMembersSection() {
 	);
 }
 
-export default OurMembersSection;
+export default OurNumbersSection;
