@@ -92,6 +92,15 @@
 			"title_three": "¿Te gustaría ganar confianza de cara a hablar en público?",
 			"message_three": "Mejora tu trato cara-a-cara con los demás"
 		},
+		"headlines": {
+			"our_numbers": {
+				"title": "NUESTROS NÚMEROS",
+				"square_members": "MIEMBROS",
+				"square_clubs": "CLUBS",
+				"square_areas": "ÁREAS",
+				"square_countries": "PAÍSES"
+			}
+		},
 		"button": "ÚNETE"
 	},
 	"login": "INICIAR SESIÓN",

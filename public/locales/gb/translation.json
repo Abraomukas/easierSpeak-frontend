@@ -92,6 +92,15 @@
 			"title_three": "Would you like to gain the confidence to speak up?",
 			"message_three": "Improve your one-on-one dealings with others"
 		},
+		"headlines": {
+			"our_numbers": {
+				"title": "OUR NUMBERS",
+				"square_members": "MEMBERS",
+				"square_clubs": "CLUBS",
+				"square_areas": "AREAS",
+				"square_countries": "COUNTRIES"
+			}
+		},
 		"button": "JOIN US"
 	},
 	"login": "LOGIN",

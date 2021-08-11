@@ -1,6 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import { Translation } from "react-i18next";
+import { Translation, useTranslation } from "react-i18next";
 
 /*
  * Components
@@ -9,9 +9,10 @@ import Carousel from "../components/Carousel";
 import Square from "../components/Square";
 
 const buttonBgColor = { backgroundColor: "#8d323f" };
-const squareColor = "#235679";
 
 function Main() {
+	const { t } = useTranslation();
+
 	return (
 		<div
 			data-bs-spy='scroll'
@@ -40,35 +41,26 @@ function Main() {
 						<h2>OUR NUMBERS</h2>
 					</div>
 					<div className='d-flex flex-row justify-content-center'>
-						<Square number='100' title='MEMBERS' />
-						<div
-							className='flex-column mx-3 align-items-center justify-content-evenly'
-							style={{
-								display: "flex",
-								width: 200,
-								height: 200,
-								backgroundColor: squareColor,
-								boxShadow: "1px 1px 10px 15px rgba(0, 0, 0, 0.2)",
-							}}>
-							<h1 className='text-white'>123</h1>
-							<h3 className='text-white'>CLUBS</h3>
-						</div>
-						<div
-							className='mx-3'
-							style={{
-								display: "flex",
-								width: 200,
-								height: 200,
-								backgroundColor: squareColor,
-							}}></div>
-						<div
-							className='mx-3'
-							style={{
-								display: "flex",
-								width: 200,
-								height: 200,
-								backgroundColor: squareColor,
-							}}></div>
+						<Square
+							color='#235679'
+							number='111'
+							title={t("page_main.headlines.our_numbers.square_members")}
+						/>
+						<Square
+							color='gray'
+							number='222'
+							title={t("page_main.headlines.our_numbers.square_clubs")}
+						/>
+						<Square
+							color='#235679'
+							number='333'
+							title={t("page_main.headlines.our_numbers.square_areas")}
+						/>
+						<Square
+							color='gray'
+							number='444'
+							title={t("page_main.headlines.our_numbers.square_countries")}
+						/>
 					</div>
 					<div className='d-flex flex-row justify-content-center 	my-3'>
 						<h2>OUR CORPORATE CLUBS</h2>
