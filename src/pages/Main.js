@@ -1,7 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import { Translation, useTranslation } from "react-i18next";
-import { Progress } from "semantic-ui-react";
+import { Translation } from "react-i18next";
 
 /*
  * Components
@@ -15,8 +14,6 @@ import OurMembersSection from "../components/OurMembersSection";
 const buttonBgColor = { backgroundColor: "#8d323f" };
 
 function Main() {
-	const { t } = useTranslation();
-
 	return (
 		<div
 			data-bs-spy='scroll'
