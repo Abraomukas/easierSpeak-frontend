@@ -10,6 +10,7 @@ import Carousel from "../components/Carousel";
 import OurNumbersSection from "../components/OurNumbersSetion";
 import OurCorpoClubsSection from "../components/OurCorpoClubsSection";
 import OurClubsSection from "../components/OurClubsSection";
+import OurMembersSection from "../components/OurMembersSection";
 
 const buttonBgColor = { backgroundColor: "#8d323f" };
 
@@ -24,20 +25,22 @@ function Main() {
 			className='scrollspy-example'
 			tabIndex='0'>
 			{/* Carousel */}
-			<div
-				className='d-flex justify-content-center'
-				style={{ marginTop: "7rem", marginBottom: "7rem" }}>
-				<Carousel />
-			</div>
-			{/* easierSpeak stats */}
-			<div className='container'>
-				<div className='d-flex flex-row my-3'>
-					<h2>OUR MEMBERS</h2>
+			<section>
+				<div
+					className='d-flex justify-content-center'
+					style={{ marginTop: "7rem", marginBottom: "7rem" }}>
+					<Carousel />
 				</div>
-				<OurClubsSection />
-				<OurNumbersSection />
-				<OurCorpoClubsSection />
-			</div>
+			</section>
+			{/* easierSpeak stats */}
+			<section>
+				<div className='container'>
+					<OurMembersSection />
+					<OurClubsSection />
+					<OurNumbersSection />
+					<OurCorpoClubsSection />
+				</div>
+			</section>
 
 			<div className='d-flex justify-content-center'>
 				{/* Sign in button */}
