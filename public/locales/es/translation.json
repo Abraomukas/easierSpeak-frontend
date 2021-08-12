@@ -97,7 +97,11 @@
 				"title": "NUESTROS MIEMBROS"
 			},
 			"our_clubs": {
-				"title": "NUESTROS CLUBES"
+				"title": "NUESTROS CLUBES",
+				"chart": {
+					"community_clubs": "Clubes sociales",
+					"corporate_clubs": "Clubes corporativos"
+				}
 			},
 			"our_numbers": {
 				"title": "NUESTROS NÚMEROS",
