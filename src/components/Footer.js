@@ -6,30 +6,27 @@ const navbarBgColor = { backgroundColor: "#235679" };
 
 function Footer() {
 	return (
-		<div>
-			<nav className='navbar text-white' style={navbarBgColor}>
-				<div className='container-fluid d-flex justify-content-center'>
-					<p className='fs-6 fw-lighter'>
-						<Translation>
-							{(t) => (
-								<small>
-									<strong>easierSpeak</strong> - {t("footer.note")} Abraomukas
-									<br />
-									{t("footer.disclaimer_one")}
-									<Link
-										className='text-white text-decoration-none'
-										to='www.toastmasters.org'>
-										Toastmasters International
-									</Link>
-									.<br />
-									{t("footer.disclaimer_two")}
-								</small>
-							)}
-						</Translation>
+		<footer class=' text-center text-white' style={navbarBgColor}>
+			<div class='container p-4'>
+				<section class='mb-4'>
+					<p>
+						Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt
+						distinctio earum repellat quaerat voluptatibus placeat nam, commodi
+						optio pariatur est quia magnam eum harum corrupti dicta, aliquam
+						sequi voluptate quas.
 					</p>
-				</div>
-			</nav>
-		</div>
+				</section>
+			</div>
+
+			<div
+				class='text-center p-3'
+				style={{ backgroundColor: "rgba(0, 0, 0, 0.2)" }}>
+				© 2020 Copyright:
+				<a class='text-white' href='https://mdbootstrap.com/'>
+					MDBootstrap.com
+				</a>
+			</div>
+		</footer>
 	);
 }
 
