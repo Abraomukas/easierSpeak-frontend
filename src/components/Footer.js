@@ -6,7 +6,7 @@ const navbarBgColor = { backgroundColor: "#235679" };
 
 function Footer() {
 	return (
-		<footer class=' text-center text-white' style={navbarBgColor}>
+		<footer class='fixed-bottom text-center text-white' style={navbarBgColor}>
 			<div class='container p-4'>
 				<section class='mb-4'>
 					<p>
