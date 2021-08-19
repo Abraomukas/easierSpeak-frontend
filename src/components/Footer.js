@@ -6,20 +6,27 @@ const navbarBgColor = { backgroundColor: "#235679" };
 
 function Footer() {
 	return (
-		<footer class='text-center text-white' style={navbarBgColor}>
-			<div class='container p-4'>
-				<section class='mb-4'>
-					<p>
-						Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt
-						distinctio earum repellat quaerat voluptatibus placeat nam, commodi
-						optio pariatur est quia magnam eum harum corrupti dicta, aliquam
-						sequi voluptate quas.
-					</p>
+		<footer className='text-center text-white' style={navbarBgColor}>
+			<div className='container p-4'>
+				<section>
+					<Translation>
+						{(t) => (
+							<small>
+								{t("footer.disclaimer_one")}
+								<Link
+									className='text-white text-decoration-none'
+									to='www.toastmasters.org'>
+									Toastmasters International
+								</Link>
+								. {t("footer.disclaimer_two")}
+							</small>
+						)}
+					</Translation>
 				</section>
 			</div>
 
 			<div
-				class='text-center p-3'
+				className='text-center p-3'
 				style={{ backgroundColor: "rgba(0, 0, 0, 0.2)" }}>
 				<Translation>
 					{(t) => (
