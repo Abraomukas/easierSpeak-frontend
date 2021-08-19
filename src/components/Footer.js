@@ -6,7 +6,7 @@ const navbarBgColor = { backgroundColor: "#235679" };
 
 function Footer() {
 	return (
-		<footer class='fixed-bottom text-center text-white' style={navbarBgColor}>
+		<footer class='text-center text-white' style={navbarBgColor}>
 			<div class='container p-4'>
 				<section class='mb-4'>
 					<p>
@@ -21,10 +21,13 @@ function Footer() {
 			<div
 				class='text-center p-3'
 				style={{ backgroundColor: "rgba(0, 0, 0, 0.2)" }}>
-				© 2020 Copyright:
-				<a class='text-white' href='https://mdbootstrap.com/'>
-					MDBootstrap.com
-				</a>
+				<Translation>
+					{(t) => (
+						<small>
+							<strong>easierSpeak</strong> - {t("footer.note")} Abraomukas
+						</small>
+					)}
+				</Translation>
 			</div>
 		</footer>
 	);
