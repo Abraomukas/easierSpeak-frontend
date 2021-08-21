@@ -12,7 +12,7 @@ const thisClubDropdown = [
 	{ label: "page_this_club.directory", path: "/my-club/directory" },
 	{ label: "page_this_club.officers_exco", path: "my-club/exco" },
 	{ label: "page_this_club.members", path: "/my-club/members" },
-	// ? { label: "Charts", path: "#" },
+	// ? { label: "Charts", path: "/" },
 	{
 		label: "page_this_club.speeches_archive",
 		path: "/my-club/speeches/archive",
@@ -29,23 +29,23 @@ const meetingsDropdown = [
 ];
 
 const goToDropdown = [
-	{ label: "page_go_to.ti_info", path: "#" },
-	{ label: "page_go_to.district_stats", path: "#" },
-	{ label: "page_go_to.map", path: "#" },
-	// ? { label: "Neighbouring clubs", path: "#" },
-	{ label: "page_go_to.club_search", path: "#" },
-	{ label: "page_go_to.member_search", path: "#" },
+	{ label: "page_go_to.ti_info", path: "/" },
+	{ label: "page_go_to.district_stats", path: "/" },
+	{ label: "page_go_to.map", path: "/" },
+	// ? { label: "Neighbouring clubs", path: "/" },
+	{ label: "page_go_to.club_search", path: "/" },
+	{ label: "page_go_to.member_search", path: "/" },
 ];
 
 const helpDropdown = [
-	{ label: "page_help.faqs", path: "#" },
-	{ label: "page_help.discussion_forum", path: "#" },
-	{ label: "page_help.knowledge_map", path: "#" },
-	{ label: "page_help.site_stats", path: "#" },
-	{ label: "page_help.training", path: "#" },
+	{ label: "page_help.faqs", path: "/" },
+	{ label: "page_help.discussion_forum", path: "/" },
+	{ label: "page_help.knowledge_map", path: "/" },
+	{ label: "page_help.site_stats", path: "/" },
+	{ label: "page_help.training", path: "/" },
 	{ label: "page_help.terms_and_conditions", path: "/terms-and-conditions" },
 	{ label: "page_help.privacy_policy", path: "/privacy-policy" },
-	// ? { label: "Site groups", path: "#" },
+	// ? { label: "Site groups", path: "/" },
 ];
 
 const headerSites = [

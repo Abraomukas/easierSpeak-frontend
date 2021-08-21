@@ -3,7 +3,6 @@
 	"version": "0.1.0",
 	"private": true,
 	"dependencies": {
-		"bootstrap": "^5.1.0",
 		"chart.js": "^3.5.0",
 		"flag-icon-css": "^3.5.0",
 		"i18next": "^20.3.3",
