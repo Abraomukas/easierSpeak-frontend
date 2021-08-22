@@ -1,4 +1,5 @@
 import React from "react";
+import {Link} from "react-router-dom";
 
 function Login() {
 	return (
@@ -11,14 +12,18 @@ function Login() {
 			<div className='modal-dialog'>
 				<div className='modal-content'>
 					<div className='modal-header'>
-						<h5 className='modal-title' id='exampleModalLabel'>
-							Modal title
-						</h5>
 						<button
 							type='button'
-							className='btn-close'
-							data-mdb-dismiss='modal'
-							aria-label='Close'></button>
+							className='btn btn-primary mx-1'
+							style={{ width: "50%" }}>
+							LOGIN
+						</button>
+						<button
+							type='button'
+							className='btn btn-primary mx-1'
+							style={{ width: "50%" }}>
+							REGISTER
+						</button>
 					</div>
 					<div className='modal-body'>...</div>
 					<div className='modal-footer'>
