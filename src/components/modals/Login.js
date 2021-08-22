@@ -1,7 +1,16 @@
 import React from "react";
-import {Link} from "react-router-dom";
+import { useState } from "react";
+
+const inactiveSectionBtnStyle = {
+	opacity: 0.5,
+	backgroundColor: "#8d323f",
+	width: "50%",
+};
+const activeSectionBtnStyle = { backgroundColor: "#235679", width: "50%" };
 
 function Login() {
+	const [active, setActive] = useState(true);
+
 	return (
 		<div
 			className='modal fade'
@@ -13,15 +22,21 @@ function Login() {
 				<div className='modal-content'>
 					<div className='modal-header'>
 						<button
+							onClick={() => {
+								setActive(false);
+							}}
 							type='button'
 							className='btn btn-primary mx-1'
-							style={{ width: "50%" }}>
+							style={active ? activeSectionBtnStyle : inactiveSectionBtnStyle}>
 							LOGIN
 						</button>
 						<button
+							onClick={() => {
+								setActive(true);
+							}}
 							type='button'
 							className='btn btn-primary mx-1'
-							style={{ width: "50%" }}>
+							style={active ? inactiveSectionBtnStyle : activeSectionBtnStyle}>
 							REGISTER
 						</button>
 					</div>
@@ -32,9 +47,6 @@ function Login() {
 							className='btn btn-secondary'
 							data-mdb-dismiss='modal'>
 							Close
-						</button>
-						<button type='button' className='btn btn-primary'>
-							Save changes
 						</button>
 					</div>
 				</div>

@@ -12,7 +12,11 @@ import DropdownList from "./DropdownList";
 import Login from "./modals/Login";
 
 const navbarBgColor = { backgroundColor: "#235679" };
-const buttonBgColor = { backgroundColor: "#8d323f" };
+const btnStyle = {
+	borderColor: "#8d323f",
+	borderWidth: "medium",
+	borderStyle: "solid",
+};
 const logoPath = "./images/tm-logo.png";
 const languages = [
 	{ name: "English", country_code: "gb" },
@@ -104,8 +108,8 @@ function Navbar(props) {
 					{/* Language selector */}
 					<div className='dropdown mx-3'>
 						<button
-							className='btn btn-secondary dropdown-toggle'
-							style={buttonBgColor}
+							className='btn text-white dropdown-toggle'
+							style={btnStyle}
 							type='button'
 							id='dropdownMenuButton1'
 							data-bs-toggle='dropdown'
@@ -139,7 +143,7 @@ function Navbar(props) {
 							<button
 								type='button'
 								className='btn text-white'
-								style={buttonBgColor}
+								style={btnStyle}
 								data-bs-toggle='modal'
 								data-bs-target='#exampleModal'>
 								{t("login")}

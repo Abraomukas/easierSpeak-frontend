@@ -11,7 +11,9 @@ import OurCorpoClubsSection from "../components/OurCorpoClubsSection";
 import OurClubsSection from "../components/OurClubsSection";
 import OurMembersSection from "../components/OurMembersSection";
 
-const buttonBgColor = { backgroundColor: "#8d323f" };
+const btnStyle = {
+	backgroundColor: "#235679",
+};
 
 function Main() {
 	return (
@@ -46,7 +48,7 @@ function Main() {
 						<Link
 							to='/register'
 							className='btn btn-lg text-white w-30 my-3'
-							style={buttonBgColor}
+							style={btnStyle}
 							role='button'>
 							{t("page_main.button")}
 						</Link>
