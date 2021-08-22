@@ -23,7 +23,7 @@ function Login() {
 					<div className='modal-header'>
 						<button
 							onClick={() => {
-								setActive(false);
+								setActive(true);
 							}}
 							type='button'
 							className='btn btn-primary mx-1'
@@ -32,7 +32,7 @@ function Login() {
 						</button>
 						<button
 							onClick={() => {
-								setActive(true);
+								setActive(false);
 							}}
 							type='button'
 							className='btn btn-primary mx-1'
