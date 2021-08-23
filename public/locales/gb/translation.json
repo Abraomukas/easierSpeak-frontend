@@ -82,7 +82,9 @@
 		"email": "Email address",
 		"password": "Password",
 		"remember_me": "Remember me",
-		"forgotten_password": "Forgotten password?"
+		"sign_in": "Sign in",
+		"forgotten_password": "Forgotten password?",
+		"register": "No account yet? Click here to register"
 	},
 	"modal_register": {
 		"title": "REGISTER",

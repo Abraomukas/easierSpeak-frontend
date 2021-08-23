@@ -81,7 +81,9 @@
 		"email": "Email",
 		"password": "Contraseña",
 		"remember_me": "Recuérdame",
-		"forgotten_password": "¿Has olvidado la contraseña?"
+		"sign_in": "Acceder",
+		"forgotten_password": "¿Has olvidado la contraseña?",
+		"register": "¿No tienes cuenta todavía? Haz click aquí para registrarte"
 	},
 	"modal_register": {
 		"title": "REGISTRARSE",

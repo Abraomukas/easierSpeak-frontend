@@ -1,67 +1,78 @@
 import React from "react";
-import { useState } from "react";
 import { Translation } from "react-i18next";
+import { Link } from "react-router-dom";
+import { useState } from "react";
 
-const inactiveSectionBtnStyle = {
-	opacity: 0.5,
-	backgroundColor: "#8d323f",
-	width: "50%",
-};
-const activeSectionBtnStyle = { backgroundColor: "#235679", width: "50%" };
-
-function Login() {
-	const [active, setActive] = useState(true);
+function Login(props) {
+	const [login, setLogin] = useState(props.login);
 
 	return (
-		<div
-			className='modal fade'
-			id='exampleModal'
-			tabIndex='-1'
-			aria-labelledby='exampleModalLabel'
-			aria-hidden='true'>
-			<div className='modal-dialog'>
-				<div className='modal-content'>
-					<div className='modal-header'>
-						<Translation>
-							{(t) => (
-								<button
-									onClick={() => {
-										setActive(true);
-									}}
-									type='button'
-									className='btn btn-primary mx-1'
-									style={
-										active ? activeSectionBtnStyle : inactiveSectionBtnStyle
-									}>
-									{t("login")}
-								</button>
-							)}
-						</Translation>
-						<Translation>
-							{(t) => (
-								<button
-									onClick={() => {
-										setActive(false);
-									}}
-									type='button'
-									className='btn btn-primary mx-1'
-									style={
-										active ? inactiveSectionBtnStyle : activeSectionBtnStyle
-									}>
-									{t("modal_register.title")}
-								</button>
-							)}
-						</Translation>
-					</div>
-					<div className='modal-body'>LOGIN</div>
-					<div className='modal-footer'>
-						<button
-							type='button'
-							className='btn btn-secondary'
-							data-mdb-dismiss='modal'>
-							Close
-						</button>
-					</div>
+		<div>
+			{/* Social media OAuth */}
+			{/* Email input */}
+			<div className='form-floating my-1'>
+				<input
+					type='email'
+					className='form-control'
+					id='floatingInput'
+					placeholder='name@example.com'
+				/>
+				<Translation>
+					{(t) => (
+						<label htmlFor='floatingInput'>{t("modal_login.email")}</label>
+					)}
+				</Translation>
+			</div>
+			{/* Password input */}
+			<div className='form-floating my-1'>
+				<input
+					type='password'
+					className='form-control'
+					id='floatingPassword'
+					placeholder='Password'
+				/>
+				<Translation>
+					{(t) => (
+						<label htmlFor='floatingPassword'>
+							{t("modal_login.password")}
+						</label>
+					)}
+				</Translation>
+			</div>
+			{/* Remember me */}
+			<div className='d-flex justify-content-center'>
+				<div className='checkbox my-3'>
+					<Translation>
+						{(t) => (
+							<label>
+								<input type='checkbox' value='remember-me' />{" "}
+								{t("modal_login.remember_me")}
+							</label>
+						)}
+					</Translation>
+				</div>
+			</div>
+			{/* Sign in button */}
+			<Translation>
+				{(t) => (
+					<button
+						className='w-100 btn btn-lg btn-primary'
+						type='submit'
+						style={{ backgroundColor: "#235679" }}>
+						{t("modal_login.sign_in")}
+					</button>
+				)}
+			</Translation>
+			{/* Forgot password link */}
+			<div className='d-flex justify-content-center'>
+				<div className='my-3'>
+					<Translation>
+						{(t) => (
+							<Link className='text-decoration-none' to='/forgotten-password'>
+								{t("modal_login.forgotten_password")}
+							</Link>
+						)}
+					</Translation>
 				</div>
 			</div>
 		</div>

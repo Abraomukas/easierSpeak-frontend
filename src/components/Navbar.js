@@ -9,7 +9,7 @@ import cookies from "js-cookie";
  * Components
  */
 import DropdownList from "./DropdownList";
-import Login from "./modals/Login";
+import Login from "./Modal";
 
 const navbarBgColor = { backgroundColor: "#235679" };
 const btnStyle = {
