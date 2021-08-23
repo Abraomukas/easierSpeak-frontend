@@ -15,7 +15,7 @@ function ProfileInfoAccIFullNameAndVisibility() {
 				<Translation>
 					{(t) => (
 						<label htmlFor='floatingInput'>
-							{t("page_register.first_name")}
+							{t("modal_register.first_name")}
 						</label>
 					)}
 				</Translation>
@@ -32,7 +32,7 @@ function ProfileInfoAccIFullNameAndVisibility() {
 				<Translation>
 					{(t) => (
 						<label htmlFor='floatingInput'>
-							{t("page_register.last_name")}
+							{t("modal_register.last_name")}
 						</label>
 					)}
 				</Translation>
@@ -42,7 +42,7 @@ function ProfileInfoAccIFullNameAndVisibility() {
 				<Translation>
 					{(t) => (
 						<label htmlFor='floatingInput'>
-							{t("page_register.name_visibility.title")}
+							{t("modal_register.name_visibility.title")}
 						</label>
 					)}
 				</Translation>
@@ -58,7 +58,7 @@ function ProfileInfoAccIFullNameAndVisibility() {
 						<Translation>
 							{(t) => (
 								<label htmlFor='floatingInput'>
-									{t("page_register.name_visibility.public")}
+									{t("modal_register.name_visibility.public")}
 								</label>
 							)}
 						</Translation>
@@ -74,7 +74,7 @@ function ProfileInfoAccIFullNameAndVisibility() {
 						<Translation>
 							{(t) => (
 								<label htmlFor='floatingInput'>
-									{t("page_register.name_visibility.members")}
+									{t("modal_register.name_visibility.members")}
 								</label>
 							)}
 						</Translation>
@@ -90,7 +90,7 @@ function ProfileInfoAccIFullNameAndVisibility() {
 						<Translation>
 							{(t) => (
 								<label htmlFor='floatingInput'>
-									{t("page_register.name_visibility.officers")}
+									{t("modal_register.name_visibility.officers")}
 								</label>
 							)}
 						</Translation>

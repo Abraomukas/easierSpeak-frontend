@@ -99,16 +99,16 @@
 		"name_visibility": {
 			"title": "Your name will be visible to:",
 			"public": "Everbody",
-			"members": "Club members only",
-			"officers": "Club officers only"
+			"members": "Club members",
+			"officers": "ExCo only"
 		},
 		"location": "Location",
 		"phone": "Phone",
 		"phone_visibility": {
 			"title": "Your phone number will be visible to:",
-			"public": "Everybody",
-			"members": "Club members only",
-			"officers": "Club officers only"
+			"public": "Everbody",
+			"members": "Club members",
+			"officers": "ExCo only"
 		},
 		"general_settings": "General settings",
 		"language": "Default language ",
@@ -117,6 +117,7 @@
 			"es": "Spanish"
 		}
 	},
+	"modal_close": "CLOSE",
 	"footer": {
 		"note": "a side project by",
 		"disclaimer_one": "The names Toastmasters International and all other Toastmasters International trademarks and copyrights are the sole property of ",

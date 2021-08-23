@@ -97,17 +97,17 @@
 		"last_name": "Apellidos",
 		"name_visibility": {
 			"title": "Tu nombre será visible para:",
-			"public": "Todo el mundo",
-			"members": "Sólo miembros de tu club",
-			"officers": "Sólo los oficiales de tu club"
+			"public": "Todos",
+			"members": "Tu club",
+			"officers": "ExCo del club"
 		},
 		"location": "Ubicación",
 		"phone": "Teléfono",
 		"phone_visibility": {
 			"title": "Tu teléfono será vicible para:",
-			"public": "Todo el mundo",
-			"members": "Sólo miembros de tu club",
-			"officers": "Sólo los oficiales de tu club"
+			"public": "Todos",
+			"members": "Tu club",
+			"officers": "ExCo del club"
 		},
 		"general_settings": "Opciones generales",
 		"language": "Idioma por defecto ",
@@ -116,6 +116,7 @@
 			"es": "Español"
 		}
 	},
+	"modal_close": "CERRAR",
 	"footer": {
 		"note": "un experimento creado por",
 		"disclaimer_one": "El nombre Toastmasters International y todas sus marcas asociadas, así como los derechos de autor, son propiedad única y exclusivamente de ",

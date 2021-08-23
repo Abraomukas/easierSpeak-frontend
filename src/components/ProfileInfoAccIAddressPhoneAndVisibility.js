@@ -14,7 +14,7 @@ function ProfileInfoAccIAddressPhoneAndVisibility() {
 				/>
 				<Translation>
 					{(t) => (
-						<label htmlFor='floatingInput'>{t("page_register.location")}</label>
+						<label htmlFor='floatingInput'>{t("modal_register.location")}</label>
 					)}
 				</Translation>
 			</div>
@@ -28,7 +28,7 @@ function ProfileInfoAccIAddressPhoneAndVisibility() {
 				/>
 				<Translation>
 					{(t) => (
-						<label htmlFor='floatingInput'>{t("page_register.phone")}</label>
+						<label htmlFor='floatingInput'>{t("modal_register.phone")}</label>
 					)}
 				</Translation>
 			</div>
@@ -37,7 +37,7 @@ function ProfileInfoAccIAddressPhoneAndVisibility() {
 				<Translation>
 					{(t) => (
 						<label htmlFor='floatingInput'>
-							{t("page_register.phone_visibility.title")}
+							{t("modal_register.phone_visibility.title")}
 						</label>
 					)}
 				</Translation>
@@ -53,7 +53,7 @@ function ProfileInfoAccIAddressPhoneAndVisibility() {
 						<Translation>
 							{(t) => (
 								<label htmlFor='floatingInput'>
-									{t("page_register.phone_visibility.public")}
+									{t("modal_register.phone_visibility.public")}
 								</label>
 							)}
 						</Translation>
@@ -69,7 +69,7 @@ function ProfileInfoAccIAddressPhoneAndVisibility() {
 						<Translation>
 							{(t) => (
 								<label htmlFor='floatingInput'>
-									{t("page_register.phone_visibility.members")}
+									{t("modal_register.phone_visibility.members")}
 								</label>
 							)}
 						</Translation>
@@ -85,7 +85,7 @@ function ProfileInfoAccIAddressPhoneAndVisibility() {
 						<Translation>
 							{(t) => (
 								<label htmlFor='floatingInput'>
-									{t("page_register.phone_visibility.officers")}
+									{t("modal_register.phone_visibility.officers")}
 								</label>
 							)}
 						</Translation>

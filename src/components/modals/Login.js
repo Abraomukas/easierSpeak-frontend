@@ -1,11 +1,8 @@
 import React from "react";
 import { Translation } from "react-i18next";
 import { Link } from "react-router-dom";
-import { useState } from "react";
 
 function Login(props) {
-	const [login, setLogin] = useState(props.login);
-
 	return (
 		<div>
 			{/* Social media OAuth */}

@@ -14,7 +14,7 @@ function RegistrationInfoAccordionItem() {
 							data-bs-target='#collapseOne'
 							aria-expanded='true'
 							aria-controls='collapseOne'>
-							{t("page_register.registration_info")}
+							{t("modal_register.registration_info")}
 						</button>
 					)}
 				</Translation>
@@ -36,7 +36,7 @@ function RegistrationInfoAccordionItem() {
 						<Translation>
 							{(t) => (
 								<label htmlFor='floatingInput'>
-									{t("page_register.username")}
+									{t("modal_register.username")}
 								</label>
 							)}
 						</Translation>
@@ -52,7 +52,7 @@ function RegistrationInfoAccordionItem() {
 						<Translation>
 							{(t) => (
 								<label htmlFor='floatingInput'>
-									{t("page_register.email")}
+									{t("modal_register.email")}
 								</label>
 							)}
 						</Translation>
@@ -68,7 +68,7 @@ function RegistrationInfoAccordionItem() {
 						<Translation>
 							{(t) => (
 								<label htmlFor='floatingPassword'>
-									{t("page_login.password")}
+									{t("modal_login.password")}
 								</label>
 							)}
 						</Translation>
@@ -84,7 +84,7 @@ function RegistrationInfoAccordionItem() {
 						<Translation>
 							{(t) => (
 								<label htmlFor='floatingInput'>
-									{t("page_register.confirm_password")}
+									{t("modal_register.confirm_password")}
 								</label>
 							)}
 						</Translation>

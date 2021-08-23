@@ -4,8 +4,8 @@ import { Translation } from "react-i18next";
 /*
  * Components
  */
-import ProfileInfoAccIFullNameAndVisibility from "./ProfileInfoAccIFullNameAndVisibility";
-import ProfileInfoAccIAddressPhoneAndVisibility from "./ProfileInfoAccIAddressPhoneAndVisibility";
+import ProfileInfoAccIFullNameAndVisibility from "../ProfileInfoAccIFullNameAndVisibility";
+import ProfileInfoAccIAddressPhoneAndVisibility from "../ProfileInfoAccIAddressPhoneAndVisibility";
 
 function ProfileInfoAccordionItem() {
 	return (
@@ -20,7 +20,7 @@ function ProfileInfoAccordionItem() {
 							data-bs-target='#collapseTwo'
 							aria-expanded='false'
 							aria-controls='collapseTwo'>
-							{t("page_register.profile_info")}
+							{t("modal_register.profile_info")}
 						</button>
 					)}
 				</Translation>

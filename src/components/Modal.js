@@ -1,6 +1,10 @@
 import React from "react";
 import { useState } from "react";
 import { Translation } from "react-i18next";
+
+/*
+ * Components
+ */
 import Login from "./modals/Login";
 import Register from "./modals/Register";
 
@@ -60,12 +64,17 @@ function Modal() {
 					</div>
 					<div className='modal-body'>{login ? <Login /> : <Register />}</div>
 					<div className='modal-footer'>
-						<button
-							type='button'
-							className='btn btn-secondary'
-							data-mdb-dismiss='modal'>
-							Close
-						</button>
+						<Translation>
+							{(t) => (
+								<button
+									type='button'
+									className='btn btn-secondary'
+									data-mdb-dismiss='modal'
+									style={{ backgroundColor: "#8d323f" }}>
+									{t("modal_close")}
+								</button>
+							)}
+						</Translation>
 					</div>
 				</div>
 			</div>
