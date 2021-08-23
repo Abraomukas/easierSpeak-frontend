@@ -37,51 +37,11 @@
 		"terms_and_conditions": "Términos y condiciones",
 		"privacy_policy": "Política de privacidad"
 	},
-	"page_login": {
-		"title": "Por favor, inicia sesión",
-		"email": "Email",
-		"password": "Contraseña",
-		"remember_me": "Recuérdame",
-		"sign_in": "INICIAR SESIÓN",
-		"forgotten_password": "¿Has olvidado la contraseña?",
-		"register": "¿No tienes cuenta todavía? Haz click aquí para registrarte"
-	},
 	"page_forgotten_password": {
 		"title": "Recuperar contraseña",
 		"message": "Introduce tu email y se te enviará un enlace para que puedas resetear tu contraseña",
 		"email": "Email",
 		"request_password": "RECUPERAR CONTRASEÑA"
-	},
-	"page_register": {
-		"title": "Por favor, rellena todos los campos en cada sección",
-		"registration_info": "Datos de registro",
-		"username": "Nombre de usuario",
-		"email": "Email",
-		"password": "Contraseña",
-		"confirm_password": "Confirmar contraseña",
-		"profile_info": "Datos de perfil",
-		"first_name": "Nombre",
-		"last_name": "Apellidos",
-		"name_visibility": {
-			"title": "Tu nombre será visible para:",
-			"public": "Todo el mundo",
-			"members": "Sólo miembros de tu club",
-			"officers": "Sólo los oficiales de tu club"
-		},
-		"location": "Ubicación",
-		"phone": "Teléfono",
-		"phone_visibility": {
-			"title": "Tu teléfono será vicible para:",
-			"public": "Todo el mundo",
-			"members": "Sólo miembros de tu club",
-			"officers": "Sólo los oficiales de tu club"
-		},
-		"general_settings": "Opciones generales",
-		"language": "Idioma por defecto ",
-		"languages": {
-			"gb": "Inglés",
-			"es": "Español"
-		}
 	},
 	"page_main": {
 		"carousel": {
@@ -117,6 +77,43 @@
 		"button": "ÚNETE"
 	},
 	"login": "INICIAR SESIÓN",
+	"modal_login": {
+		"email": "Email",
+		"password": "Contraseña",
+		"remember_me": "Recuérdame",
+		"forgotten_password": "¿Has olvidado la contraseña?"
+	},
+	"modal_register": {
+		"title": "REGISTRARSE",
+		"registration_info": "Datos de registro",
+		"username": "Nombre de usuario",
+		"email": "Email",
+		"password": "Contraseña",
+		"confirm_password": "Confirmar contraseña",
+		"profile_info": "Datos de perfil",
+		"first_name": "Nombre",
+		"last_name": "Apellidos",
+		"name_visibility": {
+			"title": "Tu nombre será visible para:",
+			"public": "Todo el mundo",
+			"members": "Sólo miembros de tu club",
+			"officers": "Sólo los oficiales de tu club"
+		},
+		"location": "Ubicación",
+		"phone": "Teléfono",
+		"phone_visibility": {
+			"title": "Tu teléfono será vicible para:",
+			"public": "Todo el mundo",
+			"members": "Sólo miembros de tu club",
+			"officers": "Sólo los oficiales de tu club"
+		},
+		"general_settings": "Opciones generales",
+		"language": "Idioma por defecto ",
+		"languages": {
+			"gb": "Inglés",
+			"es": "Español"
+		}
+	},
 	"footer": {
 		"note": "un experimento creado por",
 		"disclaimer_one": "El nombre Toastmasters International y todas sus marcas asociadas, así como los derechos de autor, son propiedad única y exclusivamente de ",

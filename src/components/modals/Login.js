@@ -1,5 +1,6 @@
 import React from "react";
 import { useState } from "react";
+import { Translation } from "react-i18next";
 
 const inactiveSectionBtnStyle = {
 	opacity: 0.5,
@@ -21,26 +22,38 @@ function Login() {
 			<div className='modal-dialog'>
 				<div className='modal-content'>
 					<div className='modal-header'>
-						<button
-							onClick={() => {
-								setActive(true);
-							}}
-							type='button'
-							className='btn btn-primary mx-1'
-							style={active ? activeSectionBtnStyle : inactiveSectionBtnStyle}>
-							LOGIN
-						</button>
-						<button
-							onClick={() => {
-								setActive(false);
-							}}
-							type='button'
-							className='btn btn-primary mx-1'
-							style={active ? inactiveSectionBtnStyle : activeSectionBtnStyle}>
-							REGISTER
-						</button>
+						<Translation>
+							{(t) => (
+								<button
+									onClick={() => {
+										setActive(true);
+									}}
+									type='button'
+									className='btn btn-primary mx-1'
+									style={
+										active ? activeSectionBtnStyle : inactiveSectionBtnStyle
+									}>
+									{t("login")}
+								</button>
+							)}
+						</Translation>
+						<Translation>
+							{(t) => (
+								<button
+									onClick={() => {
+										setActive(false);
+									}}
+									type='button'
+									className='btn btn-primary mx-1'
+									style={
+										active ? inactiveSectionBtnStyle : activeSectionBtnStyle
+									}>
+									{t("modal_register.title")}
+								</button>
+							)}
+						</Translation>
 					</div>
-					<div className='modal-body'>...</div>
+					<div className='modal-body'>LOGIN</div>
 					<div className='modal-footer'>
 						<button
 							type='button'

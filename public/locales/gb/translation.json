@@ -37,52 +37,13 @@
 		"terms_and_conditions": "Terms and conditions",
 		"privacy_policy": "Privacy policy"
 	},
-	"page_login": {
-		"title": "Please sign in",
-		"email": "Email address",
-		"password": "Password",
-		"remember_me": "Remember me",
-		"sign_in": "SIGN IN",
-		"forgotten_password": "Forgotten password?",
-		"register": "No account yet? Click here to register"
-	},
 	"page_forgotten_password": {
 		"title": "Forgot password",
 		"message": "Enter your email address and we will send you a link to reset your password",
 		"email": "Email address",
 		"request_password": "REQUEST PASSWORD"
 	},
-	"page_register": {
-		"title": "Please fill in all data in each section",
-		"registration_info": "Registration information",
-		"username": "Username",
-		"email": "Email address",
-		"password": "Password",
-		"confirm_password": "Confirm password",
-		"profile_info": "Profile information",
-		"first_name": "First name",
-		"last_name": "Last name",
-		"name_visibility": {
-			"title": "Your name will be visible to:",
-			"public": "Everbody",
-			"members": "Club members only",
-			"officers": "Club officers only"
-		},
-		"location": "Location",
-		"phone": "Phone",
-		"phone_visibility": {
-			"title": "Your phone number will be visible to:",
-			"public": "Everybody",
-			"members": "Club members only",
-			"officers": "Club officers only"
-		},
-		"general_settings": "General settings",
-		"language": "Default language ",
-		"languages": {
-			"gb": "English",
-			"es": "Spanish"
-		}
-	},
+
 	"page_main": {
 		"carousel": {
 			"title_one": "Would you like to improve your speaking and leadership skills?",
@@ -117,6 +78,43 @@
 		"button": "JOIN US"
 	},
 	"login": "LOGIN",
+	"modal_login": {
+		"email": "Email address",
+		"password": "Password",
+		"remember_me": "Remember me",
+		"forgotten_password": "Forgotten password?"
+	},
+	"modal_register": {
+		"title": "REGISTER",
+		"registration_info": "Registration information",
+		"username": "Username",
+		"email": "Email address",
+		"password": "Password",
+		"confirm_password": "Confirm password",
+		"profile_info": "Profile information",
+		"first_name": "First name",
+		"last_name": "Last name",
+		"name_visibility": {
+			"title": "Your name will be visible to:",
+			"public": "Everbody",
+			"members": "Club members only",
+			"officers": "Club officers only"
+		},
+		"location": "Location",
+		"phone": "Phone",
+		"phone_visibility": {
+			"title": "Your phone number will be visible to:",
+			"public": "Everybody",
+			"members": "Club members only",
+			"officers": "Club officers only"
+		},
+		"general_settings": "General settings",
+		"language": "Default language ",
+		"languages": {
+			"gb": "English",
+			"es": "Spanish"
+		}
+	},
 	"footer": {
 		"note": "a side project by",
 		"disclaimer_one": "The names Toastmasters International and all other Toastmasters International trademarks and copyrights are the sole property of ",
