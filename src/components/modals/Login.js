@@ -72,6 +72,7 @@ function Login(props) {
 					</Translation>
 				</div>
 			</div>
+			{/* Forgot password section */}
 		</div>
 	);
 }
