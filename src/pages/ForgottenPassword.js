@@ -19,7 +19,7 @@ function ForgottenPassword() {
 				{(t) => <p>{t("page_forgotten_password.message")}</p>}
 			</Translation>
 			<div className='form-floating mb-3'>
-				<input
+				<input	
 					type='email'
 					className='form-control'
 					id='floatingInput'

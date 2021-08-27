@@ -1,8 +1,18 @@
 import React from "react";
+import { useState } from "react";
 import { Translation } from "react-i18next";
 import { Link } from "react-router-dom";
 
-function Login(props) {
+const forgottenPwdStyle = {
+	padding: "1rem",
+	margin: "1rem",
+	display: "flex",
+	border: "0.1rem #c0c0c0 solid",
+};
+
+function Login() {
+	const [forgottenPwd, setForgottenPwd] = useState(false);
+
 	return (
 		<div>
 			{/* Social media OAuth */}
@@ -65,7 +75,12 @@ function Login(props) {
 				<div className='my-3'>
 					<Translation>
 						{(t) => (
-							<Link className='text-decoration-none' to='/forgotten-password'>
+							<Link
+								className='text-decoration-none'
+								to='/forgotten-password'
+								onClick={() => {
+									setForgottenPwd(true);
+								}}>
 								{t("modal_login.forgotten_password")}
 							</Link>
 						)}
@@ -73,6 +88,7 @@ function Login(props) {
 				</div>
 			</div>
 			{/* Forgot password section */}
+			{forgottenPwd && <div style={forgottenPwdStyle}>WOLOLO</div>}
 		</div>
 	);
 }
