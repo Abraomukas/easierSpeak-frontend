@@ -37,13 +37,6 @@
 		"terms_and_conditions": "Terms and conditions",
 		"privacy_policy": "Privacy policy"
 	},
-	"page_forgotten_password": {
-		"title": "Forgot password",
-		"message": "Enter your email address and we will send you a link to reset your password",
-		"email": "Email address",
-		"request_password": "REQUEST PASSWORD"
-	},
-
 	"page_main": {
 		"carousel": {
 			"title_one": "Would you like to improve your speaking and leadership skills?",
@@ -83,7 +76,12 @@
 		"password": "Password",
 		"remember_me": "Remember me",
 		"sign_in": "Sign in",
-		"forgotten_password": "Forgotten password?",
+		"forgotten_password": {
+			"link": "Forgotten password?",
+			"message": "We will send a link to reset your password",
+			"email": "Email address",
+			"request_password": "RESET PASSWORD"
+		},
 		"register": "No account yet? Click here to register"
 	},
 	"modal_register": {

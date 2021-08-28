@@ -37,12 +37,6 @@
 		"terms_and_conditions": "Términos y condiciones",
 		"privacy_policy": "Política de privacidad"
 	},
-	"page_forgotten_password": {
-		"title": "Recuperar contraseña",
-		"message": "Introduce tu email y se te enviará un enlace para que puedas resetear tu contraseña",
-		"email": "Email",
-		"request_password": "RECUPERAR CONTRASEÑA"
-	},
 	"page_main": {
 		"carousel": {
 			"title_one": "¿Te gustaría mejorar tus habilidades de liderazgo y expresión oral?",
@@ -82,7 +76,12 @@
 		"password": "Contraseña",
 		"remember_me": "Recuérdame",
 		"sign_in": "Acceder",
-		"forgotten_password": "¿Has olvidado la contraseña?",
+		"forgotten_password": {
+			"link": "¿Has olvidado la contraseña?",
+			"message": "Se te enviará un enlace para resetear tu contraseña",
+			"email": "Email",
+			"request_password": "RESETEAR CONTRASEÑA"
+		},
 		"register": "¿No tienes cuenta todavía? Haz click aquí para registrarte"
 	},
 	"modal_register": {

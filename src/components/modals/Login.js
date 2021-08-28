@@ -78,11 +78,11 @@ function Login() {
 						{(t) => (
 							<Link
 								className='text-decoration-none'
-								to='/forgotten-password'
+								to='#'
 								onClick={() => {
 									setForgottenPwd(true);
 								}}>
-								{t("modal_login.forgotten_password")}
+								{t("modal_login.forgotten_password.link")}
 							</Link>
 						)}
 					</Translation>
@@ -91,7 +91,34 @@ function Login() {
 			{/* Forgot password section */}
 			{forgottenPwd && (
 				<Fade bottom cacade>
-					<div style={forgottenPwdStyle}>WOLOLO</div>
+					<div className='flex-column' style={forgottenPwdStyle}>
+						{/* Email input */}
+						<Translation>
+							{(t) => <p>{t("modal_login.forgotten_password.message")}</p>}
+						</Translation>
+						<div className='form-floating mb-3'>
+							<input
+								type='email'
+								className='form-control'
+								id='floatingInput'
+								placeholder='name@example.com'
+							/>
+							<Translation>
+								{(t) => (
+									<label htmlFor='floatingInput'>
+										{t("modal_login.forgotten_password.email")}
+									</label>
+								)}
+							</Translation>
+						</div>
+						<Translation>
+							{(t) => (
+								<button className='w-100 btn btn-lg btn-primary' type='submit'>
+									{t("modal_login.forgotten_password.request_password")}
+								</button>
+							)}
+						</Translation>
+					</div>
 				</Fade>
 			)}
 		</div>
