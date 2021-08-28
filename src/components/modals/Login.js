@@ -2,6 +2,7 @@ import React from "react";
 import { useState } from "react";
 import { Translation } from "react-i18next";
 import { Link } from "react-router-dom";
+import Fade from "react-reveal/Fade";
 
 const forgottenPwdStyle = {
 	padding: "1rem",
@@ -88,7 +89,11 @@ function Login() {
 				</div>
 			</div>
 			{/* Forgot password section */}
-			{forgottenPwd && <div style={forgottenPwdStyle}>WOLOLO</div>}
+			{forgottenPwd && (
+				<Fade bottom cacade>
+					<div style={forgottenPwdStyle}>WOLOLO</div>
+				</Fade>
+			)}
 		</div>
 	);
 }
