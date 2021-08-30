@@ -29,6 +29,7 @@ function Login() {
 			validatePassword(passwordField.value)
 		) {
 			dispatch(login());
+			window.location.reload();
 		}
 	};
 
@@ -58,7 +59,7 @@ function Login() {
 					type='password'
 					ref={(elem) => {
 						passwordField = elem;
-						}}
+					}}
 					className='form-control'
 					id='floatingPassword'
 					placeholder='Password'
