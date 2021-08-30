@@ -3,6 +3,9 @@ import { useState } from "react";
 import { Translation } from "react-i18next";
 import { Link } from "react-router-dom";
 import Fade from "react-reveal/Fade";
+import { useDispatch } from "react-redux";
+
+import { login } from "../../actions";
 
 const forgottenPwdStyle = {
 	padding: "1rem",
@@ -13,6 +16,7 @@ const forgottenPwdStyle = {
 
 function Login() {
 	const [forgottenPwd, setForgottenPwd] = useState(false);
+	const dispatch = useDispatch();
 
 	return (
 		<div>
@@ -66,6 +70,7 @@ function Login() {
 					<button
 						className='w-100 btn btn-lg btn-primary'
 						type='submit'
+						onClick={() => dispatch(login())}
 						style={{ backgroundColor: "#235679" }}>
 						{t("modal_login.sign_in")}
 					</button>
