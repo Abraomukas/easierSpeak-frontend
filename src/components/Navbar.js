@@ -1,9 +1,8 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import { Translation } from "react-i18next";
-import { useSelector } from "react-redux";
 import i18next from "i18next";
-import cookies from "js-cookie";
+import Cookies from "js-cookie";
 
 /*
  * Components
@@ -24,8 +23,8 @@ const languages = [
 ];
 
 function Navbar(props) {
-	const isLoggedIn = useSelector((state) => state.isLogged);
-	const currentLngCode = cookies.get("i18next") || "gb";
+	const isLoggedIn = Cookies.get("isLogged") || false;
+	const currentLngCode = Cookies.get("i18next") || "gb";
 
 	const goToDropdown = props.headerSites[0].dropdown.goToDropdown;
 	const helpDropdown = props.headerSites[1].dropdown.helpDropdown;
