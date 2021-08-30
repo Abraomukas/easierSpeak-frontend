@@ -6,6 +6,8 @@ import Fade from "react-reveal/Fade";
 import { useDispatch } from "react-redux";
 
 import { login } from "../../actions";
+import { validateEmail } from "../../utils/validation";
+import { validatePassword } from "../../utils/validation";
 
 const forgottenPwdStyle = {
 	padding: "1rem",
@@ -18,6 +20,18 @@ function Login() {
 	const [forgottenPwd, setForgottenPwd] = useState(false);
 	const dispatch = useDispatch();
 
+	let emailField;
+	let passwordField;
+
+	const loginValidation = () => {
+		if (
+			validateEmail(emailField.value) &&
+			validatePassword(passwordField.value)
+		) {
+			dispatch(login());
+		}
+	};
+
 	return (
 		<div>
 			{/* Social media OAuth */}
@@ -25,6 +39,9 @@ function Login() {
 			<div className='form-floating my-1'>
 				<input
 					type='email'
+					ref={(elem) => {
+						emailField = elem;
+					}}
 					className='form-control'
 					id='floatingInput'
 					placeholder='name@example.com'
@@ -39,6 +56,9 @@ function Login() {
 			<div className='form-floating my-1'>
 				<input
 					type='password'
+					ref={(elem) => {
+						passwordField = elem;
+						}}
 					className='form-control'
 					id='floatingPassword'
 					placeholder='Password'
@@ -70,7 +90,7 @@ function Login() {
 					<button
 						className='w-100 btn btn-lg btn-primary'
 						type='submit'
-						onClick={() => dispatch(login())}
+						onClick={loginValidation}
 						style={{ backgroundColor: "#235679" }}>
 						{t("modal_login.sign_in")}
 					</button>
