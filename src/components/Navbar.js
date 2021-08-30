@@ -9,6 +9,7 @@ import Cookies from "js-cookie";
  */
 import DropdownList from "./DropdownList";
 import Login from "./Modal";
+import ProfileDashboard from "./ProfileDashboard";
 
 const navbarBgColor = { backgroundColor: "#235679" };
 const btnStyle = {
@@ -121,7 +122,10 @@ function Navbar(props) {
 									<li key={index}>
 										<button
 											className='dropdown-item'
-											onClick={() => i18next.changeLanguage(country_code)}
+											onClick={() => {
+												i18next.changeLanguage(country_code);
+												window.location.reload();
+											}}
 											disabled={country_code === currentLngCode}>
 											<span
 												className={`flag-icon flag-icon-${country_code} mx-3`}
@@ -137,18 +141,22 @@ function Navbar(props) {
 					</div>
 
 					{/* Profile area */}
-					<Translation>
-						{(t) => (
-							<button
-								type='button'
-								className='btn text-white'
-								style={btnStyle}
-								data-bs-toggle='modal'
-								data-bs-target='#exampleModal'>
-								{t("login")}
-							</button>
-						)}
-					</Translation>
+					{isLoggedIn ? (
+						<ProfileDashboard />
+					) : (
+						<Translation>
+							{(t) => (
+								<button
+									type='button'
+									className='btn text-white'
+									style={btnStyle}
+									data-bs-toggle='modal'
+									data-bs-target='#exampleModal'>
+									{t("login")}
+								</button>
+							)}
+						</Translation>
+					)}
 				</div>
 			</div>
 			<Login />
