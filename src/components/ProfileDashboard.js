@@ -38,9 +38,10 @@ function ProfileDashboard() {
 				</Link>
 			</li>
 
+			{/* SIDE NAV TO BE ADDED HERE */}
 			{/* Avatar */}
 			<li className='nav-item me-3 me-lg-1'>
-				<Link className='nav-link d-sm-flex align-items-center' to='/'>
+				<button className='nav-link d-sm-flex align-items-center'>
 					<img
 						src={profilePicPath}
 						className='rounded-pill'
@@ -48,7 +49,7 @@ function ProfileDashboard() {
 						alt=''
 						loading='lazy'
 					/>
-				</Link>
+				</button>
 			</li>
 		</ul>
 	);
