@@ -39,6 +39,7 @@ function ProfileDashboard() {
 			</li>
 
 			{/* SIDE NAV TO BE ADDED HERE */}
+			<div></div>
 			{/* Avatar */}
 			<li className='nav-item me-3 me-lg-1'>
 				<button className='nav-link d-sm-flex align-items-center'>
