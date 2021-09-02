@@ -1,15 +1,17 @@
 import React from "react";
+import { useState } from "react";
 import { Link } from "react-router-dom";
 import { Translation } from "react-i18next";
 import i18next from "i18next";
 import Cookies from "js-cookie";
+import { IoMdMicrophone } from "react-icons/io";
 
 /*
  * Components
  */
 import DropdownList from "./DropdownList";
 import Login from "./Modal";
-import ProfileDashboard from "./ProfileDashboard";
+import ProfileSidebar from "./ProfileSidebar";
 
 const navbarBgColor = { backgroundColor: "#235679" };
 const btnStyle = {
@@ -34,6 +36,12 @@ function Navbar(props) {
 	const thisClubDropdown = props.afterLoginSites[0].dropdown.thisClubDropdown;
 	const meetingsDropdown = props.afterLoginSites[1].dropdown.meetingsDropdown;
 	const afterLoginDropdowns = [thisClubDropdown, meetingsDropdown];
+
+	const [sidebar, setSidebar] = useState(false);
+
+	const showSidebar = () => {
+		setSidebar(!sidebar);
+	};
 
 	return (
 		<header>
@@ -142,7 +150,13 @@ function Navbar(props) {
 
 					{/* Profile area */}
 					{isLoggedIn ? (
-						<ProfileDashboard />
+						<Link to='#'>
+							<IoMdMicrophone
+								className='text-white'
+								style={{ fontSize: "2rem", background: "none" }}
+								onClick={showSidebar}
+							/>
+						</Link>
 					) : (
 						<Translation>
 							{(t) => (
@@ -159,6 +173,7 @@ function Navbar(props) {
 					)}
 				</div>
 			</div>
+			<ProfileSidebar sidebar={sidebar} />
 			<Login />
 		</header>
 	);
