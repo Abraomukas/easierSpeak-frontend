@@ -7,6 +7,15 @@ function ProfileDashboard() {
     */
 	let profilePicPath = "./images/abraomukas.jpg";
 
+	const sideNavStyle = {
+		width: "240px",
+		backgroundColor: "#235679",
+		position: "absolute",
+		height: "95vh",
+		padding: "0 30px",
+		transition: "all 1s",
+	};
+
 	return (
 		<ul className='navbar-nav ms-auto align-items-center'>
 			{/* Notifications */}
@@ -38,11 +47,9 @@ function ProfileDashboard() {
 				</Link>
 			</li>
 
-			{/* SIDE NAV TO BE ADDED HERE */}
-			<div></div>
 			{/* Avatar */}
 			<li className='nav-item me-3 me-lg-1'>
-				<button className='nav-link d-sm-flex align-items-center'>
+				<button className='nav-link d-sm-flex btn text-white dropdown-toggle align-items-center'>
 					<img
 						src={profilePicPath}
 						className='rounded-pill'
@@ -52,6 +59,9 @@ function ProfileDashboard() {
 					/>
 				</button>
 			</li>
+
+			{/* SIDE NAV TO BE ADDED HERE */}
+			<div className=''></div>
 		</ul>
 	);
 }
