@@ -35,15 +35,16 @@ function ProfileSidebar(props) {
 					? { ...sidebarStyle, ...sideNavActiveStyle }
 					: { ...sidebarStyle, ...sideNavInactiveStyle }
 			}>
-			<div className='flex-'></div>
-			<AiOutlineClose
-				style={{ marginLeft: "2rem", fontSize: "2rem", background: "none" }}
-			/>
-			<img
-				src={profilePicPath}
-				alt='Profie pic'
-				style={{ width: "50px", height: "50px" }}
-			/>
+			<div className='d-flex flex-column align-items-center'>
+				<AiOutlineClose
+					style={{ marginLeft: "2rem", fontSize: "2rem", background: "none" }}
+				/>
+				<img
+					src={profilePicPath}
+					alt='Profie pic'
+					style={{ width: "50px", height: "50px" }}
+				/>
+			</div>
 		</div>
 	);
 }
