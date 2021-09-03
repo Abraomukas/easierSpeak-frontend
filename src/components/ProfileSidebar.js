@@ -41,8 +41,9 @@ function ProfileSidebar(props) {
 				/>
 				<img
 					src={profilePicPath}
+					className='rounded pill'
 					alt='Profie pic'
-					style={{ width: "50px", height: "50px" }}
+					style={{ maxWidth: "30%", maxHeight: "50%" }}
 				/>
 			</div>
 		</div>
