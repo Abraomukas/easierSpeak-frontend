@@ -2,6 +2,10 @@ import React from "react";
 import { Link } from "react-router-dom";
 import { AiOutlineClose } from "react-icons/ai";
 import { Translation } from "react-i18next";
+import { useDispatch } from "react-redux";
+import Cookies from "js-cookie";
+
+import { login } from "../actions/";
 
 function ProfileSidebar(props) {
 	/*
@@ -28,7 +32,14 @@ function ProfileSidebar(props) {
 		transition: "350ms",
 	};
 
-	console.log(props.sidebar);
+	const dispatch = useDispatch();
+
+	const logout = () => {
+		dispatch(login());
+		Cookies.remove("isLogged");
+		window.location.reload();
+	};
+
 	return (
 		<div
 			style={
@@ -48,7 +59,7 @@ function ProfileSidebar(props) {
 				/>
 				<Translation>
 					{(t) => (
-						<button type='button' className='btn btn-danger'>
+						<button type='button' className='btn btn-danger' onClick={logout}>
 							{t("sidebar.logout")}
 						</button>
 					)}

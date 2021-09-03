@@ -4,7 +4,7 @@ import { Translation } from "react-i18next";
 import { Link } from "react-router-dom";
 import Fade from "react-reveal/Fade";
 import { useDispatch } from "react-redux";
-import cookies from "js-cookie";
+import Cookies from "js-cookie";
 
 import { login } from "../../actions";
 import { validateEmail } from "../../utils/validation";
@@ -30,7 +30,7 @@ function Login() {
 			validatePassword(passwordField.value)
 		) {
 			dispatch(login());
-			cookies.set("isLogged", true);
+			Cookies.set("isLogged", true);
 			window.location.reload();
 		}
 	};
