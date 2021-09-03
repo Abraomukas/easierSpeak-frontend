@@ -45,6 +45,9 @@ function ProfileSidebar(props) {
 					alt='Profie pic'
 					style={{ maxWidth: "30%", maxHeight: "50%" }}
 				/>
+				<button type='button' className='btn btn-danger'>
+					LOG OUT
+				</button>
 			</div>
 		</div>
 	);
