@@ -1,6 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import { AiOutlineClose } from "react-icons/ai";
+import { Translation } from "react-i18next";
 
 function ProfileSidebar(props) {
 	/*
@@ -45,9 +46,13 @@ function ProfileSidebar(props) {
 					alt='Profie pic'
 					style={{ maxWidth: "30%", maxHeight: "50%" }}
 				/>
-				<button type='button' className='btn btn-danger'>
-					LOG OUT
-				</button>
+				<Translation>
+					{(t) => (
+						<button type='button' className='btn btn-danger'>
+							{t("sidebar.log_out")}
+						</button>
+					)}
+				</Translation>
 			</div>
 		</div>
 	);

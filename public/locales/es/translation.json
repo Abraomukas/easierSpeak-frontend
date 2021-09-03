@@ -120,5 +120,8 @@
 		"note": "un experimento creado por",
 		"disclaimer_one": "El nombre Toastmasters International y todas sus marcas asociadas, así como los derechos de autor, son propiedad única y exclusivamente de ",
 		"disclaimer_two": "Esta web está siendo creada y mantenida por miembros de la asociación para su uso dentro de los clubes a los que están afiliados y sólo está disponoble para clubes Toastmasters. No está financiada por Toastmasters International."
+	},
+	"sidebar": {
+		"log_out": "CERRAR SESIÓN"
 	}
 }

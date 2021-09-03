@@ -120,5 +120,8 @@
 		"note": "a side project by",
 		"disclaimer_one": "The names Toastmasters International and all other Toastmasters International trademarks and copyrights are the sole property of ",
 		"disclaimer_two": "This website is developed, supported and financed by Toastmaster members for use in their own clubs and is only available to Toastmaster clubs. It is not financed or supported by Toastmasters International in any way."
+	},
+	"sidebar": {
+		"log_out": "LOG OUT"
 	}
 }
