@@ -49,7 +49,7 @@ function ProfileSidebar(props) {
 				<Translation>
 					{(t) => (
 						<button type='button' className='btn btn-danger'>
-							{t("sidebar.log_out")}
+							{t("sidebar.logout")}
 						</button>
 					)}
 				</Translation>
