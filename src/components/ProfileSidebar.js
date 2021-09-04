@@ -49,6 +49,7 @@ function ProfileSidebar(props) {
 			}>
 			<div className='d-flex flex-column align-items-center'>
 				<AiOutlineClose
+					className='text-white mt-3 mb-5'
 					style={{ marginLeft: "2rem", fontSize: "2rem", background: "none" }}
 				/>
 				<img
