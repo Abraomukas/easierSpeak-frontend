@@ -63,7 +63,13 @@ function ProfileSidebar(props) {
 					alt='Profie pic'
 					style={{ maxWidth: "30%", maxHeight: "50%" }}
 				/>
-				<p className='text-white fs-5 mt-3'>Welcome {username}</p>
+				<Translation>
+					{(t) => (
+						<p className='text-white fs-5 mt-3'>
+							{t("sidebar.welcome")} {username}
+						</p>
+					)}
+				</Translation>
 				<Translation>
 					{(t) => (
 						<button type='button' className='btn btn-danger' onClick={logout}>

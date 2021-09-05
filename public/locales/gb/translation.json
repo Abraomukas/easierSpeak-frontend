@@ -122,6 +122,7 @@
 		"disclaimer_two": "This website is developed, supported and financed by Toastmaster members for use in their own clubs and is only available to Toastmaster clubs. It is not financed or supported by Toastmasters International in any way."
 	},
 	"sidebar": {
+		"welcome": "Welcome",
 		"logout": "LOG OUT"
 	}
 }
