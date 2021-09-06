@@ -85,6 +85,9 @@ function ProfileSidebar(props) {
 				</div>
 
 				{/* MY PROFILE */}
+				<Link className='text-white mb-3' to='#'>
+					My profile
+				</Link>
 				{/* MY PARTICIPATION */}
 				{/* NEXT MEETING */}
 				{/* MY CLUB */}
