@@ -123,6 +123,7 @@
 	},
 	"sidebar": {
 		"welcome": "Welcome",
+		"my_profile": "My profile",
 		"logout": "LOG OUT"
 	}
 }

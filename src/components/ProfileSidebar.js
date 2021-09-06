@@ -85,9 +85,13 @@ function ProfileSidebar(props) {
 				</div>
 
 				{/* MY PROFILE */}
-				<Link className='text-white mb-3' to='#'>
-					My profile
-				</Link>
+				<Translation>
+					{(t) => (
+						<Link className='text-white mb-3' to='#'>
+							{t("sidebar.my_profile")}
+						</Link>
+					)}
+				</Translation>
 				{/* MY PARTICIPATION */}
 				{/* NEXT MEETING */}
 				{/* MY CLUB */}
