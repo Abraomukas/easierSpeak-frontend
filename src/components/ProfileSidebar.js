@@ -92,9 +92,11 @@ function ProfileSidebar(props) {
 						</Link>
 					)}
 				</Translation>
-				{/* MY PARTICIPATION */}
 				{/* NEXT MEETING */}
 				{/* MY CLUB */}
+				<Link className='text-white mb-3' to='#'>
+					My Club
+				</Link>
 				{/* EXCO ROLE TASKS */}
 
 				{/* LOGOUT */}
