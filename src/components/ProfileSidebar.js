@@ -18,7 +18,7 @@ function ProfileSidebar(props) {
 	*/
 	let username = "Abraomukas";
 	let tmClub = "Skylarks TM";
-	let exCoRole = "Vice President of Education";
+	let role = "Vice President of Education";
 
 	const sidebarStyle = {
 		backgroundColor: "#235679",
@@ -81,10 +81,11 @@ function ProfileSidebar(props) {
 				{/* CURRENT STATUS */}
 				<div class='card-footer border-light text-white text-center'>
 					<p className='fw-bold'>{tmClub}</p>
-					<p>({exCoRole})</p>
+					<p>({role})</p>
 				</div>
 
 				{/* NEXT MEETING */}
+				{/* MY PARTICIPATION */}
 				{/* MY PROFILE */}
 				<Translation>
 					{(t) => (
@@ -93,6 +94,7 @@ function ProfileSidebar(props) {
 						</Link>
 					)}
 				</Translation>
+
 				{/* MY CLUB */}
 				<Translation>
 					{(t) => (
@@ -101,7 +103,15 @@ function ProfileSidebar(props) {
 						</Link>
 					)}
 				</Translation>
+
 				{/* EXCO ROLE TASKS */}
+				{role !== "Member" && (
+					<div class='card-footer border-light text-white text-center'>
+						<Link className='text-white mb-3' to='#'>
+							VPE tasks
+						</Link>
+					</div>
+				)}
 
 				{/* LOGOUT */}
 				<Translation>
