@@ -84,6 +84,7 @@ function ProfileSidebar(props) {
 					<p>({exCoRole})</p>
 				</div>
 
+				{/* NEXT MEETING */}
 				{/* MY PROFILE */}
 				<Translation>
 					{(t) => (
@@ -92,11 +93,14 @@ function ProfileSidebar(props) {
 						</Link>
 					)}
 				</Translation>
-				{/* NEXT MEETING */}
 				{/* MY CLUB */}
-				<Link className='text-white mb-3' to='#'>
-					My Club
-				</Link>
+				<Translation>
+					{(t) => (
+						<Link className='text-white mb-3' to='#'>
+							{t("sidebar.my_club")}
+						</Link>
+					)}
+				</Translation>
 				{/* EXCO ROLE TASKS */}
 
 				{/* LOGOUT */}

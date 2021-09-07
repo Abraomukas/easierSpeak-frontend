@@ -124,6 +124,7 @@
 	"sidebar": {
 		"welcome": "Bienvenido",
 		"my_profile": "Mi perfil",
+		"my_club": "Mi club",
 		"logout": "CERRAR SESIÓN"
 	}
 }
