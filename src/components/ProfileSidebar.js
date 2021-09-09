@@ -6,6 +6,7 @@ import { useDispatch } from "react-redux";
 import Cookies from "js-cookie";
 
 import { login } from "../actions/";
+import { excoRoleFunctions } from "../utils/exco";
 
 function ProfileSidebar(props) {
 	/*
@@ -19,6 +20,9 @@ function ProfileSidebar(props) {
 	let username = "Abraomukas";
 	let tmClub = "Skylarks TM";
 	let role = "Vice President of Education";
+	const roleTasks = excoRoleFunctions(role);
+
+	console.log(roleTasks);
 
 	const sidebarStyle = {
 		backgroundColor: "#235679",
@@ -109,15 +113,20 @@ function ProfileSidebar(props) {
 				{/* EXCO ROLE TASKS */}
 				{role !== "Member" && (
 					<div className='d-flex flex-column align-items-center'>
-						<Link className='text-white mb-3' to='#'>
-							VPE tasks
-						</Link>
-						<Link className='text-white mb-3' to='#'>
-							Member statistics
-						</Link>
-						<Link className='text-white mb-3' to='#'>
-							Member management
-						</Link>
+						{roleTasks.map((linkObj, index) => {
+							return (
+								<Translation>
+									{(t) => (
+										<Link
+											key={index}
+											className='text-white mb-3'
+											to={linkObj.path}>
+											{t(linkObj.label)}
+										</Link>
+									)}
+								</Translation>
+							);
+						})}
 					</div>
 				)}
 

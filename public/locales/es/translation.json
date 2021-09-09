@@ -125,6 +125,40 @@
 		"welcome": "Bienvenido",
 		"my_profile": "Mi perfil",
 		"my_club": "Mi club",
+		"exco": {
+			"president": {
+				"tasks": "Tareas del presidente"
+			},
+			"vpe": {
+				"tasks": "Tareas del VPE",
+				"member_stats": "Estadísticas de los miembros",
+				"member_mgmt": "Gestión de los miembros"
+			},
+			"vpm": {
+				"tasks": "Tareas del VP Membership"
+			},
+			"vppr": {
+				"tasks": "Tareas del VP Public Relations"
+			},
+			"secretary": {
+				"tasks": "Tareas del secretario"
+			}, 
+			"treasurer": {
+				"tasks": "Tareas del tesorero"
+			},
+			"saa": {
+				"tasks": "Tareas del Sergeant at Arms"
+			},
+			"ipp": {
+				"tasks": "Tareas del antiguo presidente"
+			},
+			"it": {
+				"tasks": "Tareas de IT"
+			},
+			"vpmen": {
+				"tasks": "Tareas del VP Mentoring"
+			}
+		},
 		"logout": "CERRAR SESIÓN"
 	}
 }
