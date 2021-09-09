@@ -79,10 +79,12 @@ function ProfileSidebar(props) {
 				</Translation>
 
 				{/* CURRENT STATUS */}
-				<div class='card-footer border-light text-white text-center'>
+				<div className='card-footer border-light' />
+				<div className='text-white text-center'>
 					<p className='fw-bold'>{tmClub}</p>
 					<p>({role})</p>
 				</div>
+				<div className='card-footer border-light' />
 
 				{/* NEXT MEETING */}
 				{/* MY PARTICIPATION */}
@@ -106,9 +108,15 @@ function ProfileSidebar(props) {
 
 				{/* EXCO ROLE TASKS */}
 				{role !== "Member" && (
-					<div class='card-footer border-light text-white text-center'>
+					<div className='d-flex flex-column align-items-center'>
 						<Link className='text-white mb-3' to='#'>
 							VPE tasks
+						</Link>
+						<Link className='text-white mb-3' to='#'>
+							Member statistics
+						</Link>
+						<Link className='text-white mb-3' to='#'>
+							Member management
 						</Link>
 					</div>
 				)}

@@ -11,7 +11,9 @@ function MyClub() {
 			{/* EXCO */}
 			{/* ALL MEMBERS */}
 			{/* SOCIAL */}
-			<div></div>
+			<div>
+				<h1>SKYLARKS TM</h1>
+			</div>
 		</div>
 	);
 }
