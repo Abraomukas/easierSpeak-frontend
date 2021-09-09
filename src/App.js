@@ -11,12 +11,14 @@ import LayoutRoute from "./LayoutRoute";
  * Pages
  */
 import Main from "./pages/Main";
+import MyClub from "./pages/MyClub";
 
 function App() {
 	return (
 		<BrowserRouter>
 			<Switch>
-				<LayoutRoute path='/' exact={true} component={Main} />
+				<LayoutRoute path='/' exact component={Main} />
+				<LayoutRoute path='/' exact component={MyClub} />
 			</Switch>
 		</BrowserRouter>
 	);
