@@ -1,28 +1,32 @@
 export function excoRoleFunctions(role) {
 	switch (role) {
 		case "President":
-			return role.toLowerCase();
+			return presidentTasks();
 		case "Vice President of Education":
 			return vpeTaks();
 		case "Vice President of Membership":
-			return "vpm";
+			return vpmTasks();
 		case "Vice President of Public Relations":
-			return "vppr";
+			return vpprTasks();
 		case "Secretary":
-			return role.toLowerCase();
+			return secretaryTasks();
 		case "Treasurer":
-			return role.toLowerCase();
+			return treasurerTasks();
 		case "Sergeant at Arms":
-			return "saa";
+			return saaTasks();
 		case "Immediate Past President":
-			return "ipp";
+			return ippTasks();
 		case "IT Support":
-			return "it";
+			return itTasks();
 		case "Vice President of Mentoring":
-			return "vpmen";
+			return vpmenTasks();
 		default:
-			return "Member";
+			return [];
 	}
+}
+
+function presidentTasks() {
+	return [{ label: "sidebar.exco.president.tasks", path: "#" }];
 }
 
 function vpeTaks() {
@@ -31,4 +35,36 @@ function vpeTaks() {
 		{ label: "sidebar.exco.vpe.member_stats", path: "#" },
 		{ label: "sidebar.exco.vpe.member_mgmt", path: "#" },
 	];
+}
+
+function vpmTasks() {
+	return [{ label: "sidebar.exco.vpm.tasks", path: "#" }];
+}
+
+function vpprTasks() {
+	return [{ label: "sidebar.exco.vppr.tasks", path: "#" }];
+}
+
+function secretaryTasks() {
+	return [{ label: "sidebar.exco.secretary.tasks", path: "#" }];
+}
+
+function treasurerTasks() {
+	return [{ label: "sidebar.exco.treasurer.tasks", path: "#" }];
+}
+
+function saaTasks() {
+	return [{ label: "sidebar.exco.saa.tasks", path: "#" }];
+}
+
+function ippTasks() {
+	return [{ label: "sidebar.exco.ipp.tasks", path: "#" }];
+}
+
+function itTasks() {
+	return [{ label: "sidebar.exco.it.tasks", path: "#" }];
+}
+
+function vpmenTasks() {
+	return [{ label: "sidebar.exco.vpmen.tasks", path: "#" }];
 }
