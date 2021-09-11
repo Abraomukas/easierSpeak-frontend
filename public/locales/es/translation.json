@@ -124,6 +124,12 @@
 	"sidebar": {
 		"welcome": "Bienvenido",
 		"my_profile": "Mi perfil",
+		"my_participation": {
+			"title": "PARTICIPACIÓN",
+			"next_meeting": "Ir a la siguiente reunión",
+			"request_speech": "Solicitar un discurso",
+			"speech_progress": "Ver mi historial de discursos"
+		},
 		"my_club": "Mi club",
 		"exco": {
 			"president": {
@@ -142,7 +148,7 @@
 			},
 			"secretary": {
 				"tasks": "Tareas del secretario"
-			}, 
+			},
 			"treasurer": {
 				"tasks": "Tareas del tesorero"
 			},

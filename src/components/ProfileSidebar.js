@@ -7,7 +7,6 @@ import Cookies from "js-cookie";
 
 import { login } from "../actions/";
 import { excoRoleFunctions } from "../utils/exco";
-import Register from "./modals/Register";
 
 function ProfileSidebar(props) {
 	/*
@@ -108,16 +107,20 @@ function ProfileSidebar(props) {
 						className='accordion-item'
 						style={{ backgroundColor: "transparent" }}>
 						<h2 className='accordion-header' id='headingOne'>
-							<button
-								className='accordion-button btn btn-secondary text-white'
-								type='button'
-								data-bs-toggle='collapse'
-								data-bs-target='#collapseOne'
-								aria-expanded='true'
-								aria-controls='collapseOne'
-								style={{ backgroundColor: "transparent" }}>
-								PARTICIPATION
-							</button>
+							<Translation>
+								{(t) => (
+									<button
+										className='btn btn-secondary accordion-button text-white fs-6'
+										type='button'
+										data-bs-toggle='collapse'
+										data-bs-target='#collapseOne'
+										aria-expanded='true'
+										aria-controls='collapseOne'
+										style={{ backgroundColor: "transparent" }}>
+										{t("sidebar.my_participation.title")}
+									</button>
+								)}
+							</Translation>
 						</h2>
 						<div
 							id='collapseOne'
@@ -125,15 +128,27 @@ function ProfileSidebar(props) {
 							aria-labelledby='headingOne'
 							data-bs-parent='#accordionExample'>
 							<div className='accordion-body d-flex flex-column align-items-start'>
-								<Link className='text-white mb-3' to='#'>
-									Sign up for next meeting
-								</Link>
-								<Link className='text-white mb-3' to='#'>
-									Request a speech
-								</Link>
-								<Link className='text-white mb-3' to='#'>
-									View my speech progress
-								</Link>
+								<Translation>
+									{(t) => (
+										<Link className='text-white mb-3' to='#'>
+											{t("sidebar.my_participation.next_meeting")}
+										</Link>
+									)}
+								</Translation>
+								<Translation>
+									{(t) => (
+										<Link className='text-white mb-3' to='#'>
+											{t("sidebar.my_participation.request_speech")}
+										</Link>
+									)}
+								</Translation>
+								<Translation>
+									{(t) => (
+										<Link className='text-white mb-3' to='#'>
+											{t("sidebar.my_participation.speech_progress")}
+										</Link>
+									)}
+								</Translation>
 							</div>
 						</div>
 					</div>

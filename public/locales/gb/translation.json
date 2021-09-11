@@ -124,6 +124,12 @@
 	"sidebar": {
 		"welcome": "Welcome",
 		"my_profile": "My profile",
+		"my_participation": {
+			"title": "PARTICIPATION",
+			"next_meeting": "Sign up for next meeting",
+			"request_speech": "Request a speech",
+			"speech_progress": "View my speech progress"
+		},
 		"my_club": "My club",
 		"exco": {
 			"president": {
