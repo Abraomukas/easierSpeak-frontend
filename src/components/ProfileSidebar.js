@@ -7,6 +7,7 @@ import Cookies from "js-cookie";
 
 import { login } from "../actions/";
 import { excoRoleFunctions } from "../utils/exco";
+import Register from "./modals/Register";
 
 function ProfileSidebar(props) {
 	/*
@@ -91,7 +92,7 @@ function ProfileSidebar(props) {
 				<div className='card-footer border-light' />
 
 				{/* NEXT MEETING */}
-				{/* MY PARTICIPATION */}
+
 				{/* MY PROFILE */}
 				<Translation>
 					{(t) => (
@@ -100,6 +101,43 @@ function ProfileSidebar(props) {
 						</Link>
 					)}
 				</Translation>
+
+				{/* MY PARTICIPATION */}
+				<div className='accordion' id='accordionExample'>
+					<div
+						className='accordion-item'
+						style={{ backgroundColor: "transparent" }}>
+						<h2 className='accordion-header' id='headingOne'>
+							<button
+								className='accordion-button btn btn-secondary text-white'
+								type='button'
+								data-bs-toggle='collapse'
+								data-bs-target='#collapseOne'
+								aria-expanded='true'
+								aria-controls='collapseOne'
+								style={{ backgroundColor: "transparent" }}>
+								PARTICIPATION
+							</button>
+						</h2>
+						<div
+							id='collapseOne'
+							className='accordion-collapse collapse'
+							aria-labelledby='headingOne'
+							data-bs-parent='#accordionExample'>
+							<div className='accordion-body d-flex flex-column align-items-start'>
+								<Link className='text-white mb-3' to='#'>
+									Sign up for next meeting
+								</Link>
+								<Link className='text-white mb-3' to='#'>
+									Request a speech
+								</Link>
+								<Link className='text-white mb-3' to='#'>
+									View my speech progress
+								</Link>
+							</div>
+						</div>
+					</div>
+				</div>
 
 				{/* MY CLUB */}
 				<Translation>
