@@ -97,13 +97,13 @@ function ProfileSidebar(props) {
 							<Translation>
 								{(t) => (
 									<button
-										className='btn btn-secondary accordion-button text-white fs-6'
+										className='btn btn-secondary accordion-button text-white fs-6 text-center'
 										type='button'
 										data-bs-toggle='collapse'
 										data-bs-target='#profileCollapse'
 										aria-expanded='true'
 										aria-controls='profileCollapse'
-										style={{ backgroundColor: "transparent" }}>
+										style={{ backgroundColor: "transparent", width: "200px" }}>
 										{t("sidebar.my_profile.title")}
 									</button>
 								)}
@@ -150,13 +150,13 @@ function ProfileSidebar(props) {
 							<Translation>
 								{(t) => (
 									<button
-										className='btn btn-secondary accordion-button text-white fs-6'
+										className='btn btn-secondary accordion-button text-white fs-6 text-center'
 										type='button'
 										data-bs-toggle='collapse'
 										data-bs-target='#participationCollapse'
 										aria-expanded='true'
 										aria-controls='participationCollapse'
-										style={{ backgroundColor: "transparent" }}>
+										style={{ backgroundColor: "transparent", width: "200px" }}>
 										{t("sidebar.my_participation.title")}
 									</button>
 								)}
@@ -204,13 +204,16 @@ function ProfileSidebar(props) {
 								<Translation>
 									{(t) => (
 										<button
-											className='btn btn-secondary accordion-button text-white fs-6'
+											className='btn btn-secondary accordion-button text-white fs-6 text-center'
 											type='button'
 											data-bs-toggle='collapse'
 											data-bs-target='#excoCollapse'
 											aria-expanded='true'
 											aria-controls='excoCollapse'
-											style={{ backgroundColor: "transparent" }}>
+											style={{
+												backgroundColor: "transparent",
+												width: "200px",
+											}}>
 											{t("sidebar.exco.vpe.tasks")}
 										</button>
 									)}
