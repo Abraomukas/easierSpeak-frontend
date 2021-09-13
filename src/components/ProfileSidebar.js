@@ -111,7 +111,7 @@ function ProfileSidebar(props) {
 						</h2>
 						<div
 							id='profileCollapse'
-							className='accordion-collapse collapse'
+							className='accordion-collapse collapse show'
 							aria-labelledby='profileHeadingOne'
 							data-bs-parent='#profileAccordion'>
 							<div className='accordion-body d-flex flex-column align-items-start'>
