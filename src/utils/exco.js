@@ -31,7 +31,7 @@ function presidentTasks() {
 
 function vpeTaks() {
 	return [
-		{ label: "sidebar.exco.vpe.tasks", path: "#" },
+		{ label: "sidebar.exco.vpe.charts", path: "#" },
 		{ label: "sidebar.exco.vpe.member_stats", path: "#" },
 		{ label: "sidebar.exco.vpe.member_mgmt", path: "#" },
 	];

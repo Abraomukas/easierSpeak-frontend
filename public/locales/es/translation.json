@@ -142,6 +142,7 @@
 			},
 			"vpe": {
 				"tasks": "Tareas del VPE",
+				"charts": "Gráficas",
 				"member_stats": "Estadísticas de los miembros",
 				"member_mgmt": "Gestión de los miembros"
 			},

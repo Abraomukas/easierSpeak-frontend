@@ -22,8 +22,6 @@ function ProfileSidebar(props) {
 	let role = "Vice President of Education";
 	const roleTasks = excoRoleFunctions(role);
 
-	console.log(roleTasks);
-
 	const sidebarStyle = {
 		backgroundColor: "#235679",
 		width: "250px",
@@ -198,21 +196,49 @@ function ProfileSidebar(props) {
 
 				{/* EXCO ROLE TASKS */}
 				{role !== "Member" && (
-					<div className='d-flex flex-column align-items-center'>
-						{roleTasks.map((linkObj, index) => {
-							return (
+					<div className='accordion mb-3' id='excoAccordion'>
+						<div
+							className='accordion-item'
+							style={{ backgroundColor: "transparent" }}>
+							<h2 className='accordion-header' id='excoHeading'>
 								<Translation>
 									{(t) => (
-										<Link
-											key={index}
-											className='text-white mb-3'
-											to={linkObj.path}>
-											{t(linkObj.label)}
-										</Link>
+										<button
+											className='btn btn-secondary accordion-button text-white fs-6'
+											type='button'
+											data-bs-toggle='collapse'
+											data-bs-target='#excoCollapse'
+											aria-expanded='true'
+											aria-controls='excoCollapse'
+											style={{ backgroundColor: "transparent" }}>
+											{t("sidebar.exco.vpe.tasks")}
+										</button>
 									)}
 								</Translation>
-							);
-						})}
+							</h2>
+							<div
+								id='excoCollapse'
+								className='accordion-collapse collapse'
+								aria-labelledby='excoHeading'
+								data-bs-parent='#excoAccordion'>
+								<div className='accordion-body d-flex flex-column align-items-start'>
+									{roleTasks.map((linkObj, index) => {
+										return (
+											<Translation>
+												{(t) => (
+													<Link
+														key={index}
+														className='text-white mb-3'
+														to={linkObj.path}>
+														{t(linkObj.label)}
+													</Link>
+												)}
+											</Translation>
+										);
+									})}
+								</div>
+							</div>
+						</div>
 					</div>
 				)}
 

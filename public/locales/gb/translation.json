@@ -142,6 +142,7 @@
 			},
 			"vpe": {
 				"tasks": "VPE tasks",
+				"charts": "Charts",
 				"member_stats": "Member statistics",
 				"member_mgmt": "Member management"
 			},
