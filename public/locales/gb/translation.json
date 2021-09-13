@@ -123,7 +123,12 @@
 	},
 	"sidebar": {
 		"welcome": "Welcome",
-		"my_profile": "My profile",
+		"my_profile": {
+			"title": "MY PROFILE",
+			"personal_data": "Personal data",
+			"ti_data": "Toastmasters data",
+			"config": "Configuration"
+		},
 		"my_participation": {
 			"title": "PARTICIPATION",
 			"next_meeting": "Sign up for next meeting",

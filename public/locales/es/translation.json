@@ -123,7 +123,12 @@
 	},
 	"sidebar": {
 		"welcome": "Bienvenido",
-		"my_profile": "Mi perfil",
+		"my_profile": {
+			"title": "MI PERFIL",
+			"personal_data": "Datos personales",
+			"ti_data": "Datos en Toastmasters",
+			"config": "Configuración"
+		},
 		"my_participation": {
 			"title": "PARTICIPACIÓN",
 			"next_meeting": "Ir a la siguiente reunión",

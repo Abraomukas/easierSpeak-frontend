@@ -90,32 +90,74 @@ function ProfileSidebar(props) {
 				</div>
 				<div className='card-footer border-light' />
 
-				{/* NEXT MEETING */}
-
 				{/* MY PROFILE */}
-				<Translation>
-					{(t) => (
-						<Link className='text-white mb-3' to='#'>
-							{t("sidebar.my_profile")}
-						</Link>
-					)}
-				</Translation>
-
-				{/* MY PARTICIPATION */}
-				<div className='accordion' id='accordionExample'>
+				<div className='accordion mb-3' id='profileAccordion'>
 					<div
 						className='accordion-item'
 						style={{ backgroundColor: "transparent" }}>
-						<h2 className='accordion-header' id='headingOne'>
+						<h2 className='accordion-header' id='profileHeadingOne'>
 							<Translation>
 								{(t) => (
 									<button
 										className='btn btn-secondary accordion-button text-white fs-6'
 										type='button'
 										data-bs-toggle='collapse'
-										data-bs-target='#collapseOne'
+										data-bs-target='#profileCollapse'
 										aria-expanded='true'
-										aria-controls='collapseOne'
+										aria-controls='profileCollapse'
+										style={{ backgroundColor: "transparent" }}>
+										{t("sidebar.my_profile.title")}
+									</button>
+								)}
+							</Translation>
+						</h2>
+						<div
+							id='profileCollapse'
+							className='accordion-collapse collapse'
+							aria-labelledby='profileHeadingOne'
+							data-bs-parent='#profileAccordion'>
+							<div className='accordion-body d-flex flex-column align-items-start'>
+								<Translation>
+									{(t) => (
+										<Link className='text-white mb-3' to='#'>
+											{t("sidebar.my_profile.personal_data")}
+										</Link>
+									)}
+								</Translation>
+								<Translation>
+									{(t) => (
+										<Link className='text-white mb-3' to='#'>
+											{t("sidebar.my_profile.ti_data")}
+										</Link>
+									)}
+								</Translation>
+								<Translation>
+									{(t) => (
+										<Link className='text-white mb-3' to='#'>
+											{t("sidebar.my_profile.config")}
+										</Link>
+									)}
+								</Translation>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				{/* MY PARTICIPATION */}
+				<div className='accordion mb-3' id='participationAccordion'>
+					<div
+						className='accordion-item'
+						style={{ backgroundColor: "transparent" }}>
+						<h2 className='accordion-header' id='participationHeading'>
+							<Translation>
+								{(t) => (
+									<button
+										className='btn btn-secondary accordion-button text-white fs-6'
+										type='button'
+										data-bs-toggle='collapse'
+										data-bs-target='#participationCollapse'
+										aria-expanded='true'
+										aria-controls='participationCollapse'
 										style={{ backgroundColor: "transparent" }}>
 										{t("sidebar.my_participation.title")}
 									</button>
@@ -123,10 +165,10 @@ function ProfileSidebar(props) {
 							</Translation>
 						</h2>
 						<div
-							id='collapseOne'
+							id='participationCollapse'
 							className='accordion-collapse collapse'
-							aria-labelledby='headingOne'
-							data-bs-parent='#accordionExample'>
+							aria-labelledby='participationHeading'
+							data-bs-parent='#participationAccordion'>
 							<div className='accordion-body d-flex flex-column align-items-start'>
 								<Translation>
 									{(t) => (
@@ -153,15 +195,6 @@ function ProfileSidebar(props) {
 						</div>
 					</div>
 				</div>
-
-				{/* MY CLUB */}
-				<Translation>
-					{(t) => (
-						<Link className='text-white mb-3' to='#'>
-							{t("sidebar.my_club")}
-						</Link>
-					)}
-				</Translation>
 
 				{/* EXCO ROLE TASKS */}
 				{role !== "Member" && (
