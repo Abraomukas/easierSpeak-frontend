@@ -6,10 +6,10 @@ import { Translation } from "react-i18next";
  * Components
  */
 import Carousel from "../components/Carousel";
-import OurNumbersSection from "../components/OurNumbersSetion";
-import OurCorpoClubsSection from "../components/OurCorpoClubsSection";
-import OurClubsSection from "../components/OurClubsSection";
-import OurMembersSection from "../components/OurMembersSection";
+import OurNumbers from "../components/sections/OurNumbers";
+import OurCorpoClubs from "../components/sections/OurCorpoClubs";
+import OurClubs from "../components/sections/OurClubs";
+import OurMembers from "../components/sections/OurMembers";
 
 const btnStyle = {
 	backgroundColor: "#235679",
@@ -34,10 +34,10 @@ function Main() {
 			{/* easierSpeak stats */}
 			<section>
 				<div className='container'>
-					<OurMembersSection />
-					<OurClubsSection />
-					<OurNumbersSection />
-					<OurCorpoClubsSection />
+					<OurMembers />
+					<OurClubs />
+					<OurNumbers />
+					<OurCorpoClubs />
 				</div>
 			</section>
 

@@ -5,9 +5,9 @@ import { Translation, useTranslation } from "react-i18next";
 /*
  * Components
  */
-import Square from "./Square";
+import Square from "../Square";
 
-function OurNumbersSection() {
+function OurNumbers() {
 	const { t } = useTranslation();
 
 	return (
@@ -51,4 +51,4 @@ function OurNumbersSection() {
 	);
 }
 
-export default OurNumbersSection;
+export default OurNumbers;

@@ -2,7 +2,7 @@ import React from "react";
 import { Translation, useTranslation } from "react-i18next";
 import { Doughnut } from "react-chartjs-2";
 
-function OurClubsSection() {
+function OurClubs() {
 	const { t } = useTranslation();
 
 	const data = {
@@ -37,4 +37,4 @@ function OurClubsSection() {
 	);
 }
 
-export default OurClubsSection;
+export default OurClubs;
