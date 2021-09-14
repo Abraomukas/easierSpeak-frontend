@@ -2,18 +2,32 @@ import React from "react";
 
 function MyClub() {
 	return (
-		<div>
+		<div className='mh-100 mw-100 d-flex flex-column justify-content-center'>
 			{/* TITLE */}
+			<section>
+				<div className='mh-100'>
+					<h1 className='mw-75 mh-75'>Skylarks Toastmasters Club</h1>
+				</div>
+			</section>
+
 			{/* ABOUT */}
+			<section>
+				<div className='mh-100'>
+					<h3 className='mw-75 mh-75'>About our club</h3>
+				</div>
+			</section>
+
 			{/* CLUB DETAILS */}
 			{/* TM MISSION */}
 			{/* TM PITCH */}
-			{/* EXCO */}
-			{/* ALL MEMBERS */}
+			<section>
+				<div className='mh-100'></div>
+			</section>
+
 			{/* SOCIAL */}
-			<div>
-				<h1>SKYLARKS TM</h1>
-			</div>
+			<section>
+				<div className='mh-100'></div>
+			</section>
 		</div>
 	);
 }
