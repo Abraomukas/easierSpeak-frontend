@@ -18,7 +18,7 @@ function App() {
 		<BrowserRouter>
 			<Switch>
 				<LayoutRoute path='/' exact component={Main} />
-				<LayoutRoute path='/' exact component={MyClub} />
+				<LayoutRoute path='/my-club' exact component={MyClub} />
 			</Switch>
 		</BrowserRouter>
 	);
