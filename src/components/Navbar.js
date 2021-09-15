@@ -13,7 +13,7 @@ import DropdownList from "./DropdownList";
 import Login from "./Modal";
 import ProfileSidebar from "./ProfileSidebar";
 
-const navbarBgColor = { backgroundColor: "#235679" };
+const navbarBgColor = { backgroundColor: "#235679"};
 const btnStyle = {
 	borderColor: "#8d323f",
 	borderWidth: "medium",
