@@ -1,11 +1,14 @@
 import React from "react";
+import { Translation } from "react-i18next";
 
 function MyClub() {
 	return (
 		<div className='d-flex flex-column min-vh-100'>
 			{/* TITLE */}
 			<section>
-				<div className='d-flex justify-content-center' style={{ marginTop: "7rem" }}>
+				<div
+					className='d-flex justify-content-center'
+					style={{ marginTop: "7rem" }}>
 					<h1>Skylarks Toastmasters Club</h1>
 				</div>
 			</section>
@@ -13,39 +16,38 @@ function MyClub() {
 			{/* ABOUT */}
 			<section>
 				<div className='my-3'>
-					<h3>About our club</h3>
-					<p>
-						Welcome to our Toastmasters Club . We are an English language public
-						speaking and leadership club that is part of a worldwide
-						Toastmasters Organization. Both native and non-native English
-						speakers have opportunity to hone their speaking, listening and
-						leadership skills in our Club.
-					</p>
-					<p>
-						<strong>
-							A FRIENDLY AND MUTUALLY SUPPORTIVE LEARNING ENVIRONMENT
-						</strong>
-					</p>
-					<p>
-						Our members are committed to help each other improve their public
-						speaking and leadership skills.
-					</p>
+					<Translation>{(t) => <h3>{t("my_club.about")}</h3>}</Translation>
+					<Translation>
+						{(t) => (
+							<p>
+								{t("my_club.welcome")}
+								<strong>{t("my_club.env")}</strong>
+							</p>
+						)}
+					</Translation>
+					<Translation>
+						{(t) => <p>{t("my_club.queries.title")}</p>}
+					</Translation>
 					<ul>
 						<li>
-							<p>Do you want to express yourself better in front of people?</p>
+							<Translation>
+								{(t) => <p>{t("my_club.queries.q1")}</p>}
+							</Translation>
 						</li>
 						<li>
-							<p>Are you dreaming of a more efficient self-expression style?</p>
+							<Translation>
+								{(t) => <p>{t("my_club.queries.q2")}</p>}
+							</Translation>
 						</li>
 						<li>
-							<p>Do you want to enhance your leadership qualities?</p>
+							<Translation>
+								{(t) => <p>{t("my_club.queries.q3")}</p>}
+							</Translation>
 						</li>
 					</ul>
-					<p>
-						Whatever your aim is, Toastmasters provides you a friendly and
-						mutually supportive learning environment that helps you achieve your
-						personal goals.
-					</p>
+					<Translation>
+						{(t) => <p>{t("my_club.queries.statement")}</p>}
+					</Translation>
 				</div>
 			</section>
 
