@@ -2,7 +2,7 @@ import React from "react";
 
 function MyClub() {
 	return (
-		<div className='d-flex flex-column'>
+		<div className='d-flex flex-column min-vh-100'>
 			{/* TITLE */}
 			<section>
 				<div className='d-flex justify-content-center' style={{ marginTop: "7rem" }}>

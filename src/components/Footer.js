@@ -2,11 +2,16 @@ import React from "react";
 import { Link } from "react-router-dom";
 import { Translation } from "react-i18next";
 
-const navbarBgColor = { backgroundColor: "#235679" };
+const navbarStyle = {
+	backgroundColor: "#235679",
+	bottom: 0,
+	marginTop: "3rem",
+	width: "100%",
+};
 
 function Footer() {
 	return (
-		<footer className='text-center text-white' style={navbarBgColor}>
+		<footer className='text-center text-white' style={navbarStyle}>
 			<div className='container p-4'>
 				<section>
 					<Translation>

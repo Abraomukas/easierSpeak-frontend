@@ -21,7 +21,7 @@ function Main() {
 			data-bs-spy='scroll'
 			data-bs-target='#navbar-example2'
 			data-bs-offset='0'
-			className='scrollspy-example'
+			className='scrollspy-example min-vh-100'
 			tabIndex='0'>
 			{/* Carousel */}
 			<section>
