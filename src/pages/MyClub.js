@@ -55,19 +55,25 @@ function MyClub() {
 								{(t) => <p>{t("my_club.queries.statement")}</p>}
 							</Translation>
 						</div>
+
 						{/* ExCo */}
 						<div className='col text-center'>
-							<Translation>{(t) => <h3>{t("my_club.about")}</h3>}</Translation>
+							<Translation>{(t) => <h3>{t("my_club.exco")}</h3>}</Translation>
 						</div>
 					</div>
 				</div>
 			</section>
 
-			{/* CLUB DETAILS */}
-			{/* TM MISSION */}
-			{/* TM PITCH */}
 			<section>
-				<div className='my-3'></div>
+				<div className='container my-3'>
+					<div className='row'>
+						{/* TM MISSION */}
+						<div className='col'></div>
+
+						{/* TM PITCH */}
+						<div className='col'></div>
+					</div>
+				</div>
 			</section>
 
 			{/* SOCIAL */}
