@@ -30,7 +30,8 @@ function Login() {
 			validatePassword(passwordField.value)
 		) {
 			dispatch(login());
-			Cookies.set("isLogged", true);
+			var inFifteenMinutes = new Date(new Date().getTime() + 15 * 60 * 1000);
+			Cookies.set("isLogged", true, { expires: inFifteenMinutes });
 			window.location.reload();
 		}
 	};
