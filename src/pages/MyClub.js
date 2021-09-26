@@ -58,7 +58,29 @@ function MyClub() {
 
 						{/* ExCo */}
 						<div className='col text-center'>
-							<Translation>{(t) => <h3>{t("my_club.exco")}</h3>}</Translation>
+							<div>
+								<Translation>{(t) => <h3>{t("my_club.exco")}</h3>}</Translation>
+							</div>
+							<div>
+								<table class='table'>
+									<tbody>
+										<tr>
+											<th scope='col'>President</th>
+											<td>
+												<img />
+											</td>
+											<td>Gabor Fekete</td>
+											<td>Member # 123456</td>
+											<td>
+												<button>Contact</button>
+											</td>
+										</tr>
+										<tr>
+											<th scope='row'>Vice President of Education</th>
+										</tr>
+									</tbody>
+								</table>
+							</div>
 						</div>
 					</div>
 				</div>
