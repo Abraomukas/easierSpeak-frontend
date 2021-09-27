@@ -4,7 +4,7 @@ import { Translation } from "react-i18next";
 /*
 TODO load images from Cloudinary
 */
-const presidentPic = "./images/person.jpg";
+const excoPic = "./images/person.jpg";
 
 function MyClub() {
 	return (
@@ -73,7 +73,7 @@ function MyClub() {
 											<th scope='col'>President</th>
 											<td>
 												<img
-													src={presidentPic}
+													src={excoPic}
 													height='55'
 													alt='Profile pic'
 													loading='lazy'
@@ -86,6 +86,138 @@ function MyClub() {
 										</tr>
 										<tr>
 											<th scope='row'>Vice President of Education</th>
+											<td>
+												<img
+													src={excoPic}
+													height='55'
+													alt='Profile pic'
+													loading='lazy'
+												/>
+											</td>
+											<td>Abraham Hernández Valencia</td>
+											<td>
+												<button>Contact</button>
+											</td>
+										</tr>
+										<tr>
+											<th scope='row'>Vice President of Membership</th>
+											<td>
+												<img
+													src={excoPic}
+													height='55'
+													alt='Profile pic'
+													loading='lazy'
+												/>
+											</td>
+											<td>Bence Ács</td>
+											<td>
+												<button>Contact</button>
+											</td>
+										</tr>
+										<tr>
+											<th scope='row'>Vice President of Public Relations</th>
+											<td>
+												<img
+													src={excoPic}
+													height='55'
+													alt='Profile pic'
+													loading='lazy'
+												/>
+											</td>
+											<td>Judit Saad</td>
+											<td>
+												<button>Contact</button>
+											</td>
+										</tr>
+										<tr>
+											<th scope='row'>Vice President of Mentorship</th>
+											<td>
+												<img
+													src={excoPic}
+													height='55'
+													alt='Profile pic'
+													loading='lazy'
+												/>
+											</td>
+											<td>Klaudia Fodor</td>
+											<td>
+												<button>Contact</button>
+											</td>
+										</tr>
+										<tr>
+											<th scope='row'>Secretary</th>
+											<td>
+												<img
+													src={excoPic}
+													height='55'
+													alt='Profile pic'
+													loading='lazy'
+												/>
+											</td>
+											<td>Kata Dömötör</td>
+											<td>
+												<button>Contact</button>
+											</td>
+										</tr>
+										<tr>
+											<th scope='row'>Treasurer</th>
+											<td>
+												<img
+													src={excoPic}
+													height='55'
+													alt='Profile pic'
+													loading='lazy'
+												/>
+											</td>
+											<td>Zsolt Plázár</td>
+											<td>
+												<button>Contact</button>
+											</td>
+										</tr>
+										<tr>
+											<th scope='row'>Sergeant at Arms</th>
+											<td>
+												<img
+													src={excoPic}
+													height='55'
+													alt='Profile pic'
+													loading='lazy'
+												/>
+											</td>
+											<td>Henry Scullion</td>
+											<td>
+												<button>Contact</button>
+											</td>
+										</tr>
+										<tr>
+											<th scope='row'>IT Support</th>
+											<td>
+												<img
+													src={excoPic}
+													height='55'
+													alt='Profile pic'
+													loading='lazy'
+												/>
+											</td>
+											<td>Henry Scullion</td>
+											<td>
+												<button>Contact</button>
+											</td>
+										</tr>
+										<tr>
+											<th scope='row'>Immediate Past President</th>
+											<td>
+												<img
+													src={excoPic}
+													height='55'
+													alt='Profile pic'
+													loading='lazy'
+												/>
+											</td>
+											<td>Eszter Nagy</td>
+											<td>
+												<button>Contact</button>
+											</td>
 										</tr>
 									</tbody>
 								</table>
