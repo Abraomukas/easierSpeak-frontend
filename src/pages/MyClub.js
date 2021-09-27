@@ -1,6 +1,11 @@
 import React from "react";
 import { Translation } from "react-i18next";
 
+/*
+TODO load images from Cloudinary
+*/
+const presidentPic = "./images/person.jpg";
+
 function MyClub() {
 	return (
 		<div className='d-flex flex-column min-vh-100'>
@@ -67,10 +72,14 @@ function MyClub() {
 										<tr>
 											<th scope='col'>President</th>
 											<td>
-												<img />
+												<img
+													src={presidentPic}
+													height='55'
+													alt='Profile pic'
+													loading='lazy'
+												/>
 											</td>
 											<td>Gabor Fekete</td>
-											<td>Member # 123456</td>
 											<td>
 												<button>Contact</button>
 											</td>
