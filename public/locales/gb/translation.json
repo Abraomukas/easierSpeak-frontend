@@ -174,7 +174,7 @@
 		"logout": "LOG OUT"
 	},
 	"my_club": {
-		"about": "About this club",
+		"about_us": "About this club",
 		"welcome": "Welcome to our Toastmasters Club. We are an English language public speaking and leadership club that is part of the worldwide Toastmasters Organization. Both native and non-native English speakers have the opportunity to hone their speaking, listening and leadership skills in our Club, through a ",
 		"env": "friendly and mutually supportive learning environment.",
 		"queries": {
@@ -184,6 +184,9 @@
 			"q3": "Do you want to enhance your leadership qualities?",
 			"statement": "Whichever your aim may be, Toasmasters provides you the perfect environment for you to achieve your personal goals."
 		},
-		"exco": "Executive committee (ExCo)"
+		"roster": "Our members",
+		"exco": "Executive committee (ExCo)",
+		"about_tm": "About Toastmasters",
+		"tm_mission": "Our mission"
 	}
 }

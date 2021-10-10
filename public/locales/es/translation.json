@@ -174,7 +174,7 @@
 		"logout": "CERRAR SESIÓN"
 	},
 	"my_club": {
-		"about": "Acerca de este club",
+		"about_us": "Acerca de este club",
 		"welcome": "Bienvenido a nuestro club Toastmasters. Somos un club de liderazgo y oratoria en inglés que forma parte de la organización global Toastmasters. Toda persona anglohablante (nativos y no nativos) tiene la oportunidad de desarrollar sus aptitudes de expresión oral, comprensión y liderazgo en nuestro club, dentro de un ",
 		"env": "entorno amigable y de aprendizaje constructivo.",
 		"queries": {
@@ -184,6 +184,9 @@
 			"q3": "¿Buscas llevar tu estilo de liderazgo al siguiente nivel?",
 			"statement": "Sea cual sea tu motivo, en Toastmasters encontrarás el entorno perfecto que te ayudará a conseguir tus metas personales."
 		},
-		"exco": "Comité ejecutivo"
+		"roster": "Nuestros miembros",
+		"exco": "Comité ejecutivo",
+		"about_tm": "Acerca de Toastmasters",
+		"tm_mission": "El objetivo de Toastmasters"
 	}
 }
